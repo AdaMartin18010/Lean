@@ -2,16 +2,36 @@
 
 ## 概述
 
-本文档构建了一个统一的形式科学理论框架，将类型理论、线性类型理论、Petri网理论、时态逻辑、分布式系统理论等整合为一个连贯的理论体系。该框架基于严格的数学形式化方法，为软件架构和系统设计提供统一的理论基础。
+本文档构建了一个统一的形式科学理论框架，将类型理论、线性类型理论、Petri网理论、时态逻辑、分布式系统理论等整合为一个连贯的理论体系。
+该框架基于严格的数学形式化方法，为软件架构和系统设计提供统一的理论基础。
 
 ## 目录
 
-1. [统一理论基础](#1-统一理论基础)
-2. [理论间关系映射](#2-理论间关系映射)
-3. [统一语义框架](#3-统一语义框架)
-4. [跨领域理论整合](#4-跨领域理论整合)
-5. [形式化验证框架](#5-形式化验证框架)
-6. [实际应用框架](#6-实际应用框架)
+- [11.1 理论统一框架 (Unified Framework)](#111-理论统一框架-unified-framework)
+  - [概述](#概述)
+  - [目录](#目录)
+  - [1. 统一理论基础](#1-统一理论基础)
+    - [1.1 统一公理系统](#11-统一公理系统)
+    - [1.2 统一推理规则](#12-统一推理规则)
+  - [2. 理论间关系映射](#2-理论间关系映射)
+    - [2.1 类型理论与线性类型理论](#21-类型理论与线性类型理论)
+    - [2.2 线性类型理论与Petri网理论](#22-线性类型理论与petri网理论)
+    - [2.3 时态逻辑与分布式系统](#23-时态逻辑与分布式系统)
+  - [3. 统一语义框架](#3-统一语义框架)
+    - [3.1 统一指称语义](#31-统一指称语义)
+    - [3.2 统一操作语义](#32-统一操作语义)
+  - [4. 跨领域理论整合](#4-跨领域理论整合)
+    - [4.1 类型安全与并发安全](#41-类型安全与并发安全)
+    - [4.2 时态正确性与分布式一致性](#42-时态正确性与分布式一致性)
+    - [4.3 控制理论与系统稳定性](#43-控制理论与系统稳定性)
+  - [5. 形式化验证框架](#5-形式化验证框架)
+    - [5.1 统一验证方法](#51-统一验证方法)
+    - [5.2 多理论协同验证](#52-多理论协同验证)
+  - [6. 实际应用框架](#6-实际应用框架)
+    - [6.1 软件架构设计](#61-软件架构设计)
+    - [6.2 与Lean语言的关联](#62-与lean语言的关联)
+    - [6.3 系统化方法论](#63-系统化方法论)
+  - [总结](#总结)
 
 ## 1. 统一理论基础
 
@@ -23,6 +43,7 @@
 $$\mathcal{U} = (\mathcal{T}, \mathcal{L}, \mathcal{P}, \mathcal{D}, \mathcal{C})$$
 
 其中：
+
 - $\mathcal{T}$ 是类型理论域
 - $\mathcal{L}$ 是线性逻辑域
 - $\mathcal{P}$ 是Petri网域
@@ -35,6 +56,7 @@ $$\mathcal{U} = (\mathcal{T}, \mathcal{L}, \mathcal{P}, \mathcal{D}, \mathcal{C}
 $$\mathcal{UTS} = (\text{Type}, \text{Context}, \text{Judgment}, \text{Reduction})$$
 
 其中：
+
 - $\text{Type} ::= \text{Base} \mid \text{Linear} \mid \text{Temporal} \mid \text{Distributed}$
 - $\text{Context} : \text{Var} \rightarrow \text{Type}$
 - $\text{Judgment} : \text{Context} \times \text{Expr} \times \text{Type}$
@@ -129,6 +151,7 @@ $$\text{TemporalLogic} \hookrightarrow \text{DistributedSystem}$$
 $$\mathcal{D} = \mathcal{D}_{\text{Type}} \times \mathcal{D}_{\text{Linear}} \times \mathcal{D}_{\text{Time}} \times \mathcal{D}_{\text{Dist}}$$
 
 其中：
+
 - $\mathcal{D}_{\text{Type}}$ 是类型语义域
 - $\mathcal{D}_{\text{Linear}}$ 是线性语义域
 - $\mathcal{D}_{\text{Time}}$ 是时态语义域
@@ -207,12 +230,13 @@ $$\text{ControlStable}(S) \Rightarrow \text{SystemStable}(S)$$
 $$\mathcal{VF} = (\text{Spec}, \text{Model}, \text{Check}, \text{Proof})$$
 
 其中：
+
 - $\text{Spec}$ 是规范语言
 - $\text{Model}$ 是模型构造
 - $\text{Check}$ 是验证算法
 - $\text{Proof}$ 是证明系统
 
-**算法 5.1.1 (统一模型检查)**
+**算法 5.1.1 (统一模型检查)**:
 
 ```haskell
 unifiedModelCheck :: Specification -> Model -> Bool
@@ -248,6 +272,7 @@ $$\text{Complete}(\mathcal{VF}) \iff \text{Complete}(\mathcal{VF}_{\text{Type}})
 $$\mathcal{AF} = (\text{Components}, \text{Connectors}, \text{Constraints}, \text{Properties})$$
 
 其中：
+
 - $\text{Components}$ 是组件集合
 - $\text{Connectors}$ 是连接器集合
 - $\text{Constraints}$ 是约束集合
@@ -314,4 +339,4 @@ $$\text{Complete}(\mathcal{SM}) \iff \text{Complete}(\mathcal{SM}_{\text{Type}})
 
 ---
 
-**导航**: [返回主目录](../README.md) | [下一节: 跨领域理论整合](./02_Cross_Domain_Integration.md) 
+**导航**: [返回主目录](../README.md) | [下一节: 跨领域理论整合](./02_Cross_Domain_Integration.md)
