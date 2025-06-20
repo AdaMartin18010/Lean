@@ -69,7 +69,7 @@
 **定义 2.1 (显式状态模型检查)**
 显式状态模型检查直接枚举系统的所有状态。
 
-**算法 2.1 (显式状态模型检查)**
+**算法 2.1 (显式状态模型检查)**:
 
 ```haskell
 explicitStateModelCheck :: Model -> Formula -> Bool
@@ -110,7 +110,7 @@ checkFinallyFormula model state formula =
 **定义 2.2 (固定点)**
 固定点是函数 $f$ 满足 $f(x) = x$ 的点。
 
-**算法 2.2 (固定点算法)**
+**算法 2.2 (固定点算法)**:
 
 ```haskell
 fixedPointAlgorithm :: Model -> Formula -> Set State
@@ -150,7 +150,7 @@ hasSuccessorInSet model state stateSet =
 **定义 2.3 (自动机理论方法)**
 自动机理论方法将规范转换为自动机，然后检查系统与自动机的乘积。
 
-**算法 2.3 (自动机理论方法)**
+**算法 2.3 (自动机理论方法)**:
 
 ```haskell
 automataTheoreticMethod :: Model -> Formula -> Bool
