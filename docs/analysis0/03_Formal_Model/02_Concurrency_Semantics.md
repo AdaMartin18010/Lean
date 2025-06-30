@@ -95,7 +95,7 @@ $$\frac{premise_1 \quad premise_2 \quad \cdots \quad premise_n}{conclusion}$$
 4. **通信规则**：
    $$\frac{P \xrightarrow{a} P' \quad Q \xrightarrow{\bar{a}} Q'}{P \parallel Q \xrightarrow{\tau} P' \parallel Q'}$$
 
-**算法 2.1 (SOS规则应用)**
+**算法 2.1 (SOS规则应用)**:
 
 ```haskell
 applySOSRules :: Process -> [Transition]
@@ -134,7 +134,7 @@ communicationTransitions p q =
 1. $(s_{01}, s_{02}) \in R$
 2. 如果 $(s_1, s_2) \in R$ 且 $s_1 \xrightarrow{a} s_1'$，则存在 $s_2'$ 使得 $s_2 \xrightarrow{a} s_2'$ 且 $(s_1', s_2') \in R$
 
-**算法 2.2 (双模拟计算)**
+**算法 2.2 (双模拟计算)**:
 
 ```haskell
 bisimulation :: LTS -> LTS -> Bool
@@ -201,7 +201,7 @@ $$\mathcal{C}[\![ P ]\!] : State \rightarrow \mathcal{P}(State)$$
 函数 $f : D \rightarrow D$ 是连续的，如果对于任何有向集 $X$：
 $$f(\bigsqcup X) = \bigsqcup \{f(x) \mid x \in X\}$$
 
-**算法 3.1 (函数语义计算)**
+**算法 3.1 (函数语义计算)**:
 
 ```haskell
 computeFunctionSemantics :: Process -> State -> [State]
@@ -258,7 +258,7 @@ $$P * Q \Rightarrow P \land Q$$
 **公理 4.5 (分离分配)**
 $$\frac{\{P\} C \{Q\}}{\{P * R\} C \{Q * R\}}$$
 
-**算法 4.1 (分离逻辑证明)**
+**算法 4.1 (分离逻辑证明)**:
 
 ```haskell
 proveSeparationLogic :: HoareTriple -> Bool
@@ -319,7 +319,7 @@ $$P ::= STOP \mid SKIP \mid a \rightarrow P \mid P \sqcap P \mid P \parallel P \
 CSP的指称语义基于失败-发散模型：
 $$\mathcal{F}[\![ P ]\!] = \{(s, X) \mid P \text{ can refuse } X \text{ after } s\}$$
 
-**算法 5.1 (CSP失败集计算)**
+**算法 5.1 (CSP失败集计算)**:
 
 ```haskell
 computeFailures :: CSPProcess -> [(Trace, RefusalSet)]
@@ -390,7 +390,7 @@ $$\mathcal{C}[\![ ES ]\!] = \{C \subseteq E \mid C \text{ is a configuration}\}$
 2. **冲突自由**：配置中的事件两两不冲突
 3. **因果闭包**：如果 $e \in C$ 且 $e' \leq e$，则 $e' \in C$
 
-**算法 6.1 (配置计算)**
+**算法 6.1 (配置计算)**:
 
 ```haskell
 computeConfigurations :: EventStructure -> [Configuration]
@@ -424,7 +424,7 @@ causalClosureOf es events =
 2. **选择**：$P + Q$ 转换为冲突的事件结构
 3. **并行**：$P \parallel Q$ 转换为并行的事件结构
 
-**算法 6.2 (进程到事件结构转换)**
+**算法 6.2 (进程到事件结构转换)**:
 
 ```haskell
 processToEventStructure :: Process -> EventStructure
@@ -499,7 +499,7 @@ $$e \prec^* e' \Leftrightarrow \exists e_1, \ldots, e_n : e \prec e_1 \prec \cdo
 因果语义将程序解释为因果关系集合：
 $$\mathcal{C}[\![ P ]\!] = \{(e, e') \mid e \prec e'\}$$
 
-**算法 7.1 (因果关系计算)**
+**算法 7.1 (因果关系计算)**:
 
 ```haskell
 computeCausality :: Execution -> [(Event, Event)]
@@ -546,7 +546,7 @@ causes e1 e2 =
 时间变迁 $(t, \tau)$ 在时间 $\tau$ 发生，如果：
 $$M[t\rangle \land \tau \in I(t)$$
 
-**算法 8.1 (时间Petri网模拟)**
+**算法 8.1 (时间Petri网模拟)**:
 
 ```haskell
 simulateTimedPetriNet :: TimedPetriNet -> Time -> [TimedTransition]
@@ -571,7 +571,7 @@ inInterval t (min, max) = t >= min && t <= max
 **定理 8.1 (实时可调度性)**
 实时系统是可调度的，如果所有任务都能在截止时间内完成。
 
-**算法 8.2 (实时调度检查)**
+**算法 8.2 (实时调度检查)**:
 
 ```haskell
 checkRealTimeSchedulability :: RealTimeSystem -> Bool
@@ -613,7 +613,7 @@ $$\pi = \pi \cdot P$$
 
 其中 $P$ 是转移概率矩阵。
 
-**算法 9.1 (稳态分布计算)**
+**算法 9.1 (稳态分布计算)**:
 
 ```haskell
 computeSteadyState :: MarkovChain -> [Double]
@@ -642,7 +642,7 @@ $$P ::= 0 \mid a.P \mid P +_p P \mid P \parallel P$$
 概率CCS的语义：
 $$\mathcal{P}[\![ P ]\!] : S \rightarrow [0,1]$$
 
-**算法 9.2 (概率语义计算)**
+**算法 9.2 (概率语义计算)**:
 
 ```haskell
 computeProbabilisticSemantics :: ProbabilisticProcess -> State -> Double
@@ -677,7 +677,7 @@ computeProbabilisticSemantics process state =
 2. **定理证明**：使用逻辑推理
 3. **抽象解释**：使用抽象域
 
-**算法 10.1 (并发程序验证器)**
+**算法 10.1 (并发程序验证器)**:
 
 ```haskell
 verifyConcurrentProgram :: ConcurrentProgram -> Specification -> Bool
@@ -708,7 +708,7 @@ computeSemantics program =
 3. **非抢占**：资源不能被强制剥夺
 4. **循环等待**：存在循环等待链
 
-**算法 10.2 (死锁检测)**
+**算法 10.2 (死锁检测)**:
 
 ```haskell
 detectDeadlock :: ConcurrentSystem -> Bool
@@ -741,7 +741,7 @@ buildResourceGraph system =
 3. **资源利用率**：资源使用效率
 4. **公平性**：进程间的公平调度
 
-**算法 10.3 (性能分析器)**
+**算法 10.3 (性能分析器)**:
 
 ```haskell
 analyzePerformance :: ConcurrentSystem -> PerformanceMetrics
@@ -777,7 +777,7 @@ calculateThroughput system =
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Milner, R. (1989). Communication and Concurrency.
 2. Hoare, C. A. R. (1985). Communicating Sequential Processes.
@@ -785,7 +785,7 @@ calculateThroughput system =
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [01. Petri网理论分析](../03_Formal_Model/01_Petri_Net_Theory.md)
 - [03. 状态空间分析](../03_Formal_Model/03_State_Space_Analysis.md)
