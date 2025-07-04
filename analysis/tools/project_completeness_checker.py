@@ -266,10 +266,10 @@ class ProjectCompletenessChecker:
             'average_quality_score': round(avg_quality, 1),
             'overall_completion_rate': round(overall_completion * 100, 1),
             'quality_distribution': {
-                'excellent': {'count': excellent_files, 'percentage': round(excellent_files/total_files*100, 1)},
-                'good': {'count': good_files, 'percentage': round(good_files/total_files*100, 1)},
-                'fair': {'count': fair_files, 'percentage': round(fair_files/total_files*100, 1)},
-                'poor': {'count': poor_files, 'percentage': round(poor_files/total_files*100, 1)}
+                'excellent': {'count': excellent_files, 'percentage': round(excellent_files/total_files*100, 1) if total_files > 0 else 0.0},
+                'good': {'count': good_files, 'percentage': round(good_files/total_files*100, 1) if total_files > 0 else 0.0},
+                'fair': {'count': fair_files, 'percentage': round(fair_files/total_files*100, 1) if total_files > 0 else 0.0},
+                'poor': {'count': poor_files, 'percentage': round(poor_files/total_files*100, 1) if total_files > 0 else 0.0}
             }
         }
 

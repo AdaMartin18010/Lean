@@ -1,0 +1,37 @@
+{
+  "overall_stats": {
+    "total_files": 0,
+    "total_lines": 0,
+    "total_words": 0,
+    "total_code_blocks": 0,
+    "total_formulas": 0,
+    "total_diagrams": 0,
+    "average_quality_score": 0,
+    "overall_completion_rate": 0,
+    "quality_distribution": {
+      "excellent": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "good": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "fair": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "poor": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  "series_analysis": {},
+  "quality_distribution": {},
+  "top_performers": [],
+  "improvement_needed": [],
+  "english_mirrors": {},
+  "cross_references": {},
+  "content_metrics": {}
+}
