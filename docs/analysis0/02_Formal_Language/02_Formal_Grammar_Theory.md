@@ -229,7 +229,7 @@ CSG生成的语言类与线性有界自动机识别的语言类相同。
    - 产生式模拟LBA转移
    - 开始符号表示初始配置
 
-**算法 3.1 (CSG到LBA转换)**
+**算法 3.1 (CSG到LBA转换)**:
 
 ```haskell
 csgToLBA :: CSG -> LBA
@@ -298,7 +298,7 @@ $$P \subseteq (V \cup T)^* \times (V \cup T)^*$$
 **定义 5.1 (递归下降分析)**
 递归下降分析是自顶向下的语法分析方法，为每个非终结符编写一个函数。
 
-**算法 5.1 (递归下降分析器)**
+**算法 5.1 (递归下降分析器)**:
 
 ```haskell
 data Parser a = Parser { runParser :: String -> Maybe (a, String) }
@@ -327,7 +327,7 @@ parseExprRest =
 **定义 5.2 (LR分析)**
 LR分析是自底向上的语法分析方法，使用状态机进行归约。
 
-**算法 5.2 (LR分析器)**
+**算法 5.2 (LR分析器)**:
 
 ```haskell
 data LRState = LRState { items :: Set Item, actions :: Map Symbol Action }
@@ -359,7 +359,7 @@ LL(k)文法是可以通过k个符号向前看进行预测分析的CFG。
 CFG是LL(1)的，当且仅当对于每个非终结符A和产生式 $A \rightarrow \alpha, A \rightarrow \beta$：
 $$\text{FIRST}(\alpha) \cap \text{FIRST}(\beta) = \emptyset$$
 
-**算法 5.3 (FIRST集合计算)**
+**算法 5.3 (FIRST集合计算)**:
 
 ```haskell
 first :: Grammar -> Symbol -> Set Symbol
@@ -394,7 +394,7 @@ firstOfString grammar (s:ss) =
 等价转换保持语言不变：
 $$L(G_1) = L(G_2) \Rightarrow L(T(G_1)) = L(T(G_2))$$
 
-**算法 6.1 (语法等价性检查)**
+**算法 6.1 (语法等价性检查)**:
 
 ```haskell
 equivalent :: Grammar -> Grammar -> Bool
@@ -409,7 +409,7 @@ equivalent g1 g2 =
 **定义 6.2 (语法优化)**
 语法优化是改进语法结构以提高分析效率的过程。
 
-**算法 6.2 (消除无用符号)**
+**算法 6.2 (消除无用符号)**:
 
 ```haskell
 eliminateUseless :: Grammar -> Grammar
@@ -429,7 +429,7 @@ eliminateUseless grammar =
 **定理 6.2 (规范化保持性)**
 规范化转换保持语言等价性。
 
-**算法 6.3 (语法标准化)**
+**算法 6.3 (语法标准化)**:
 
 ```haskell
 standardize :: Grammar -> Grammar
@@ -457,7 +457,7 @@ CFG语法分析的最坏情况复杂度是 $O(n^3)$。
 1. CYK算法的时间复杂度是 $O(n^3)$
 2. 存在需要 $O(n^3)$ 时间的语法
 
-**算法 7.1 (语法优化)**
+**算法 7.1 (语法优化)**:
 
 ```haskell
 optimizeGrammar :: Grammar -> Grammar
@@ -478,7 +478,7 @@ CFG歧义性问题是不可判定的。
 
 **证明：** 通过归约到语法等价性问题。
 
-**算法 7.2 (歧义检测)**
+**算法 7.2 (歧义检测)**:
 
 ```haskell
 isAmbiguous :: Grammar -> Bool
@@ -506,7 +506,7 @@ isAmbiguous grammar =
 
 ### 8.2 转换算法
 
-**算法 8.1 (正则文法到DFA转换)**
+**算法 8.1 (正则文法到DFA转换)**:
 
 ```haskell
 regularGrammarToDFA :: RegularGrammar -> DFA
@@ -522,7 +522,7 @@ regularGrammarToDFA grammar =
          , acceptingStates = acceptingStates }
 ```
 
-**算法 8.2 (CFG到下推自动机转换)**
+**算法 8.2 (CFG到下推自动机转换)**:
 
 ```haskell
 cfgToPDA :: CFG -> PDA
@@ -548,7 +548,7 @@ cfgToPDA cfg =
 **定义 9.1 (编译器前端)**
 编译器前端使用形式语法进行词法分析和语法分析。
 
-**算法 9.1 (词法分析器生成)**
+**算法 9.1 (词法分析器生成)**:
 
 ```haskell
 generateLexer :: RegularGrammar -> Lexer
@@ -558,7 +558,7 @@ generateLexer grammar =
   in Lexer { tokenize = tokenizer }
 ```
 
-**算法 9.2 (语法分析器生成)**
+**算法 9.2 (语法分析器生成)**:
 
 ```haskell
 generateParser :: CFG -> Parser
@@ -595,7 +595,7 @@ generateParser cfg =
 **定义 10.1 (语法模型)**
 语法模型是用于描述系统行为的语法结构。
 
-**算法 10.1 (语法模型检查)**
+**算法 10.1 (语法模型检查)**:
 
 ```haskell
 modelCheck :: Grammar -> Property -> Bool
@@ -615,7 +615,7 @@ modelCheck grammar property =
 
 **证明：** 通过语法等价性定义。
 
-**算法 10.2 (语法性质验证)**
+**算法 10.2 (语法性质验证)**:
 
 ```haskell
 verifyProperty :: Grammar -> Property -> Bool
@@ -637,7 +637,7 @@ verifyProperty grammar property =
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Hopcroft, J. E., Motwani, R., & Ullman, J. D. (2006). Introduction to Automata Theory, Languages, and Computation.
 2. Sipser, M. (2012). Introduction to the Theory of Computation.
@@ -645,7 +645,7 @@ verifyProperty grammar property =
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [01. 自动机理论分析](../02_Formal_Language/01_Automata_Theory.md)
 - [03. 语言层次结构分析](../02_Formal_Language/03_Language_Hierarchy.md)
