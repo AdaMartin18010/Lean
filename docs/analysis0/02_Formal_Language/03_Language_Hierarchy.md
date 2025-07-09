@@ -116,7 +116,7 @@ $$R ::= \emptyset \mid \epsilon \mid a \mid R_1 + R_2 \mid R_1 \cdot R_2 \mid R^
 3. **有限性问题**：$L$ 是有限的？
 4. **等价性问题**：$L_1 = L_2$？
 
-**算法 2.1 (正则语言成员性判定)**
+**算法 2.1 (正则语言成员性判定)**:
 
 ```haskell
 membership :: DFA -> String -> Bool
@@ -183,7 +183,7 @@ membership dfa input =
 1. **等价性问题**：$L_1 = L_2$？
 2. **歧义性问题**：文法 $G$ 是歧义的？
 
-**算法 3.1 (CFL成员性判定 - CYK算法)**
+**算法 3.1 (CFL成员性判定 - CYK算法)**:
 
 ```haskell
 cykParse :: CFG -> String -> Bool
@@ -253,7 +253,7 @@ buildCYKTable cfg input n =
 
 1. **等价性问题**：$L_1 = L_2$？
 
-**算法 4.1 (CSL成员性判定)**
+**算法 4.1 (CSL成员性判定)**:
 
 ```haskell
 csgMembership :: CSG -> String -> Bool
@@ -345,7 +345,7 @@ $$\text{Regular} \subsetneq \text{CFL} \subsetneq \text{CSL} \subsetneq \text{RE
 2. **CFL/CSL分离**：$\{a^n b^n c^n \mid n \geq 0\}$
 3. **CSL/REL分离**：通用图灵机语言
 
-**算法 6.1 (分离语言构造)**
+**算法 6.1 (分离语言构造)**:
 
 ```haskell
 constructSeparator :: LanguageClass -> LanguageClass -> Language
@@ -391,7 +391,7 @@ anbncn = Language {
 3. 设重复状态为 $q$，对应子串 $y$
 4. 则 $xy^i z \in L$ 对于所有 $i \geq 0$
 
-**算法 7.1 (泵引理应用)**
+**算法 7.1 (泵引理应用)**:
 
 ```haskell
 applyPumpingLemma :: Language -> String -> Bool
@@ -452,7 +452,7 @@ $$L_1, L_2 \in \mathcal{L} \Rightarrow L_1 \circ L_2 \in \mathcal{L}$$
 
 ### 8.2 各层次封闭性总结
 
-**定理 8.1 (封闭性总结)**
+**定理 8.1 (封闭性总结)**:
 
 | 运算 | Regular | CFL | CSL | REL |
 |------|---------|-----|-----|-----|
@@ -490,7 +490,7 @@ $$L_1, L_2 \in \mathcal{L} \Rightarrow L_1 \circ L_2 \in \mathcal{L}$$
 **定义 9.1 (判定性问题)**
 判定性问题是询问语言是否具有某种性质的问题。
 
-**定理 9.1 (判定性问题分类)**
+**定理 9.1 (判定性问题分类)**:
 
 | 问题 | Regular | CFL | CSL | REL |
 |------|---------|-----|-----|-----|
@@ -509,7 +509,7 @@ $$L_1, L_2 \in \mathcal{L} \Rightarrow L_1 \circ L_2 \in \mathcal{L}$$
 2. **空性问题**：构造空性检查算法
 3. **有限性问题**：构造有限性检查算法
 
-**算法 9.1 (空性检查)**
+**算法 9.1 (空性检查)**:
 
 ```haskell
 isEmpty :: Language -> Bool
@@ -547,7 +547,7 @@ isEmpty language =
 3. **语义分析**：上下文有关语言
 4. **代码生成**：递归可枚举语言
 
-**算法 10.1 (词法分析器)**
+**算法 10.1 (词法分析器)**:
 
 ```haskell
 lexicalAnalyzer :: RegularGrammar -> String -> [Token]
@@ -565,7 +565,7 @@ lexicalAnalyzer grammar input =
 1. **模型检查**：有限状态系统（正则语言）
 2. **定理证明**：无限状态系统（递归可枚举语言）
 
-**算法 10.2 (模型检查)**
+**算法 10.2 (模型检查)**:
 
 ```haskell
 modelCheck :: FiniteStateSystem -> Property -> Bool
@@ -586,7 +586,7 @@ modelCheck system property =
 3. **系统级**：上下文有关语言（全局约束）
 4. **企业级**：递归可枚举语言（复杂交互）
 
-**算法 10.3 (架构验证)**
+**算法 10.3 (架构验证)**:
 
 ```haskell
 verifyArchitecture :: Architecture -> Specification -> Bool
@@ -608,7 +608,7 @@ verifyArchitecture arch spec =
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Hopcroft, J. E., Motwani, R., & Ullman, J. D. (2006). Introduction to Automata Theory, Languages, and Computation.
 2. Sipser, M. (2012). Introduction to the Theory of Computation.
@@ -616,7 +616,7 @@ verifyArchitecture arch spec =
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [01. 自动机理论分析](../02_Formal_Language/01_Automata_Theory.md)
 - [02. 形式语法理论分析](../02_Formal_Language/02_Formal_Grammar_Theory.md)

@@ -6,6 +6,7 @@
 - 1.2 [Type Theory and Proof](./1.2-type-theory-and-proof/README.md)
 - 1.3 [Temporal Logic and Control](./1.3-temporal-logic-and-control/README.md)
 - 1.4 [Petri Net and Distributed Systems](./1.4-petri-net-and-distributed-systems/README.md)
+- 1.5 [Formal Language and Automata Theory](./1.5-formal-language-and-automata-theory/README.md)
 - 1.x [Other Formal Topics](./1.x-other-formal-topics.md)
 
 ## Overview

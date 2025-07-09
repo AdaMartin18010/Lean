@@ -45,6 +45,14 @@ class ProjectStatus:
 class ProjectCompletenessChecker:
     def __init__(self, root_path: str = "."):
         self.root_path = Path(root_path)
+        # 确保路径指向analysis目录
+        if not (self.root_path / "analysis").exists():
+            # 尝试查找analysis目录
+            for parent in self.root_path.parents:
+                if (parent / "analysis").exists():
+                    self.root_path = parent
+                    break
+        
         self.results = {
             'overall_stats': {},
             'series_analysis': {},
@@ -156,7 +164,7 @@ class ProjectCompletenessChecker:
             ref_score = min(10, metrics['references'] // 5)
             score += ref_score
             
-            metrics['quality_score'] = min(100, score)
+            metrics['quality_score'] = min(100, int(score))
             metrics['file_size_kb'] = file_path.stat().st_size / 1024
             
             return metrics
@@ -168,8 +176,14 @@ class ProjectCompletenessChecker:
         """分析各系列的完成情况"""
         series_stats = {}
         
+        # 确保从analysis目录开始分析
+        analysis_path = self.root_path / "analysis"
+        if not analysis_path.exists():
+            print(f"❌ 未找到analysis目录: {analysis_path}")
+            return series_stats
+        
         for series_name, info in self.series_info.items():
-            series_path = self.root_path / series_name
+            series_path = analysis_path / series_name
             if not series_path.exists():
                 continue
                 
@@ -181,7 +195,7 @@ class ProjectCompletenessChecker:
                 if md_file.name.startswith('.'):
                     continue
                     
-                rel_path = md_file.relative_to(series_path)
+                rel_path = md_file.relative_to(analysis_path)
                 quality = self.analyze_file_quality(md_file)
                 
                 files_found.append({

@@ -127,7 +127,7 @@ CFG是乔姆斯基范式，如果所有产生式形如：
    - 将长产生式分解为二元产生式
    - 引入新的非终结符表示终结符
 
-**算法 2.1 (CNF转换算法)**
+**算法 2.1 (CNF转换算法)**:
 
 ```haskell
 convertToCNF :: CFG -> CFG
@@ -172,7 +172,7 @@ $$A \rightarrow a\alpha \text{ where } a \in T, \alpha \in V^*$$
 3. 消除左递归
 4. 转换为GNF形式
 
-**算法 2.2 (GNF转换算法)**
+**算法 2.2 (GNF转换算法)**:
 
 ```haskell
 convertToGNF :: CFG -> CFG
