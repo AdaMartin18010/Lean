@@ -80,7 +80,7 @@ $$R(s) = \{s' \mid s \rightarrow^* s'\}$$
 **定义 2.1 (状态空间构建)**
 状态空间构建是从系统描述生成完整状态空间的过程。
 
-**算法 2.1 (广度优先构建)**
+**算法 2.1 (广度优先构建)**:
 
 ```haskell
 buildStateSpace :: System -> StateSpace
@@ -101,7 +101,7 @@ bfsBuild current visited transitions =
      else bfsBuild (head newStates) updatedVisited updatedTransitions
 ```
 
-**算法 2.2 (深度优先构建)**
+**算法 2.2 (深度优先构建)**:
 
 ```haskell
 dfsBuild :: System -> StateSpace
@@ -129,7 +129,7 @@ dfsBuild' current visited transitions =
 **定义 2.2 (状态生成)**
 状态生成是从当前状态计算所有可能后继状态的过程。
 
-**算法 2.3 (状态生成器)**
+**算法 2.3 (状态生成器)**:
 
 ```haskell
 generateSuccessors :: State -> [State]
@@ -159,7 +159,7 @@ applyAction state action =
 **定义 2.3 (状态表示)**
 状态表示是状态在计算机中的数据结构。
 
-**算法 2.4 (状态编码)**
+**算法 2.4 (状态编码)**:
 
 ```haskell
 encodeState :: State -> StateCode
@@ -201,7 +201,7 @@ decodeState code =
 3. **启发式探索**：按启发函数访问
 4. **随机探索**：随机访问
 
-**算法 3.1 (广度优先探索)**
+**算法 3.1 (广度优先探索)**:
 
 ```haskell
 bfsExplore :: StateSpace -> [State]
@@ -225,7 +225,7 @@ bfsExplore' queue visited result =
        in bfsExplore' newQueue newVisited newResult
 ```
 
-**算法 3.2 (深度优先探索)**
+**算法 3.2 (深度优先探索)**:
 
 ```haskell
 dfsExplore :: StateSpace -> [State]
@@ -251,7 +251,7 @@ dfsExplore' current visited result =
 **定义 3.3 (启发式函数)**
 启发式函数 $h : State \rightarrow \mathbb{R}$ 估计从状态到目标状态的距离。
 
-**算法 3.3 (A*探索)**
+**算法 3.3 (A*探索)**:
 
 ```haskell
 aStarExplore :: StateSpace -> State -> [State]
@@ -285,7 +285,7 @@ aStarExplore' openSet closedSet cameFrom gScore fScore goal =
 **定义 3.4 (并行探索)**
 并行探索使用多个处理器同时探索状态空间的不同部分。
 
-**算法 3.4 (并行BFS)**
+**算法 3.4 (并行BFS)**:
 
 ```haskell
 parallelBFS :: StateSpace -> Int -> [State]
@@ -337,7 +337,7 @@ $$\alpha(S) \sqsubseteq S^\sharp \Leftrightarrow S \subseteq \gamma(S^\sharp)$$
 **定义 4.4 (谓词抽象)**
 谓词抽象使用逻辑谓词来划分状态空间。
 
-**算法 4.1 (谓词抽象)**
+**算法 4.1 (谓词抽象)**:
 
 ```haskell
 predicateAbstraction :: StateSpace -> [Predicate] -> AbstractStateSpace
@@ -364,7 +364,7 @@ abstractTransition predicates (s1, s2) =
 **定义 4.5 (域抽象)**
 域抽象将变量值域划分为有限区间。
 
-**算法 4.2 (域抽象)**
+**算法 4.2 (域抽象)**:
 
 ```haskell
 domainAbstraction :: StateSpace -> [Variable] -> AbstractStateSpace
@@ -399,7 +399,7 @@ abstractValue value =
 
 **证明：** 通过抽象函数的单调性和Galois连接。
 
-**算法 4.3 (抽象模型检查)**
+**算法 4.3 (抽象模型检查)**:
 
 ```haskell
 abstractModelCheck :: AbstractStateSpace -> Property -> Bool
@@ -438,7 +438,7 @@ satisfies predicate abstractState =
 - **CTL**：计算树逻辑
 - **CTL***：CTL的扩展
 
-**算法 5.1 (LTL模型检查)**
+**算法 5.1 (LTL模型检查)**:
 
 ```haskell
 ltlModelCheck :: StateSpace -> LTLFormula -> Bool
@@ -468,7 +468,7 @@ ltlToAutomaton formula =
 **定义 5.3 (可达性分析)**
 可达性分析检查特定状态是否可达。
 
-**算法 5.2 (可达性检查)**
+**算法 5.2 (可达性检查)**:
 
 ```haskell
 reachabilityCheck :: StateSpace -> State -> Bool
@@ -491,7 +491,7 @@ reachabilityAnalysis stateSpace targetStates =
 **定义 5.5 (活性)**
 活性性质表示"好事最终会发生"。
 
-**算法 5.3 (安全性检查)**
+**算法 5.3 (安全性检查)**:
 
 ```haskell
 safetyCheck :: StateSpace -> SafetyProperty -> Bool
@@ -520,7 +520,7 @@ livenessCheck stateSpace property =
 **定义 6.2 (对称性压缩)**
 对称性压缩利用系统的对称性来合并等价状态。
 
-**算法 6.1 (对称性检测)**
+**算法 6.1 (对称性检测)**:
 
 ```haskell
 detectSymmetries :: StateSpace -> [Symmetry]
@@ -546,7 +546,7 @@ isSymmetry states permutation =
 **定义 6.3 (状态合并)**
 状态合并将行为相似的状态合并为一个状态。
 
-**算法 6.2 (状态合并)**
+**算法 6.2 (状态合并)**:
 
 ```haskell
 mergeStates :: StateSpace -> EquivalenceRelation -> StateSpace
@@ -576,7 +576,7 @@ mergeClasses classes (s1, s2) =
 **定义 6.4 (状态缓存)**
 状态缓存存储已计算的状态信息以避免重复计算。
 
-**算法 6.3 (状态缓存)**
+**算法 6.3 (状态缓存)**:
 
 ```haskell
 cachedStateSpace :: StateSpace -> Cache -> StateSpace
@@ -620,7 +620,7 @@ $$|S| \leq \prod_{i=1}^n |S_i|$$
 
 ### 7.2 分解算法
 
-**算法 7.1 (组件分解)**
+**算法 7.1 (组件分解)**:
 
 ```haskell
 componentDecomposition :: StateSpace -> [Component] -> [StateSpace]
@@ -648,7 +648,7 @@ extractComponentTransitions stateSpace component =
 **定义 7.3 (并行分解)**
 并行分解将状态空间分解为可以并行处理的子空间。
 
-**算法 7.2 (并行分解)**
+**算法 7.2 (并行分解)**:
 
 ```haskell
 parallelDecomposition :: StateSpace -> Int -> [StateSpace]
@@ -691,7 +691,7 @@ $$CR = \frac{|S_{compressed}|}{|S_{original}|}$$
 
 ### 8.2 压缩算法
 
-**算法 8.1 (字典压缩)**
+**算法 8.1 (字典压缩)**:
 
 ```haskell
 dictionaryCompression :: StateSpace -> CompressedStateSpace
@@ -720,7 +720,7 @@ compressState dictionary state =
   in CompressedState compressedString
 ```
 
-**算法 8.2 (差分压缩)**
+**算法 8.2 (差分压缩)**:
 
 ```haskell
 differentialCompression :: StateSpace -> CompressedStateSpace
@@ -753,7 +753,7 @@ computeDifference s1 s2 =
 **定义 8.3 (增量压缩)**
 增量压缩只压缩状态空间的变化部分。
 
-**算法 8.3 (增量压缩)**
+**算法 8.3 (增量压缩)**:
 
 ```haskell
 incrementalCompression :: StateSpace -> StateSpace -> CompressedStateSpace
@@ -788,7 +788,7 @@ incrementalCompression originalSpace newSpace =
 
 ### 9.2 可视化算法
 
-**算法 9.1 (图形布局)**
+**算法 9.1 (图形布局)**:
 
 ```haskell
 graphLayout :: StateSpace -> GraphLayout
@@ -814,7 +814,7 @@ optimizePositions positions =
      else optimizePositions newPositions
 ```
 
-**算法 9.2 (层次布局)**
+**算法 9.2 (层次布局)**:
 
 ```haskell
 hierarchicalLayout :: StateSpace -> HierarchicalLayout
@@ -843,7 +843,7 @@ bfsLevels initialState transitions =
 **定义 9.4 (交互式可视化)**
 交互式可视化允许用户与状态空间图形进行交互。
 
-**算法 9.3 (交互式探索)**
+**算法 9.3 (交互式探索)**:
 
 ```haskell
 interactiveExploration :: StateSpace -> InteractiveViewer
@@ -885,7 +885,7 @@ handleMouseClick viewer position =
 3. **公平性**：系统公平地处理所有请求
 4. **性能**：系统满足性能要求
 
-**算法 10.1 (系统验证器)**
+**算法 10.1 (系统验证器)**:
 
 ```haskell
 systemVerifier :: System -> Specification -> VerificationResult
@@ -914,7 +914,7 @@ verifyProperty stateSpace property =
 **定义 10.2 (性能分析)**
 性能分析评估系统在状态空间中的性能指标。
 
-**算法 10.2 (性能分析器)**
+**算法 10.2 (性能分析器)**:
 
 ```haskell
 performanceAnalyzer :: StateSpace -> PerformanceMetrics
@@ -943,7 +943,7 @@ calculateThroughput stateSpace =
 **定义 10.3 (系统优化)**
 系统优化基于状态空间分析结果改进系统设计。
 
-**算法 10.3 (系统优化器)**
+**算法 10.3 (系统优化器)**:
 
 ```haskell
 systemOptimizer :: StateSpace -> OptimizationStrategy -> OptimizedSystem
@@ -978,7 +978,7 @@ identifyBottlenecks stateSpace =
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Clarke, E. M., Grumberg, O., & Peled, D. A. (1999). Model Checking.
 2. Baier, C., & Katoen, J. P. (2008). Principles of Model Checking.
@@ -986,7 +986,7 @@ identifyBottlenecks stateSpace =
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [01. Petri网理论分析](../03_Formal_Model/01_Petri_Net_Theory.md)
 - [02. 并发语义理论分析](../03_Formal_Model/02_Concurrency_Semantics.md)

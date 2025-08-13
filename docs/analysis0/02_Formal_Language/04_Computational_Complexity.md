@@ -89,7 +89,7 @@ $$\forall n \geq n_0, T_A(n) \leq c \cdot f(n)$$
 
 则 $T_A(n) = O(f(n))$。
 
-**算法 2.1 (时间复杂度分析)**
+**算法 2.1 (时间复杂度分析)**:
 
 ```haskell
 analyzeTimeComplexity :: Algorithm -> Input -> TimeComplexity
@@ -156,7 +156,7 @@ $$\forall n \geq n_0, S_A(n) \leq c \cdot f(n)$$
 
 则 $S_A(n) = O(f(n))$。
 
-**算法 3.1 (空间复杂度分析)**
+**算法 3.1 (空间复杂度分析)**:
 
 ```haskell
 analyzeSpaceComplexity :: Algorithm -> Input -> SpaceComplexity
@@ -281,7 +281,7 @@ SAT问题是NP完全的。
 1. **SAT ∈ NP**：非确定性算法猜测赋值
 2. **SAT是NP困难的**：将任意NP问题归约到SAT
 
-**算法 5.1 (SAT到3-SAT归约)**
+**算法 5.1 (SAT到3-SAT归约)**:
 
 ```haskell
 reduceSATto3SAT :: CNF -> 3CNF
@@ -315,7 +315,7 @@ convertClause clause =
 
 **证明：** 通过多项式时间归约。
 
-**算法 5.2 (3-SAT到CLIQUE归约)**
+**算法 5.2 (3-SAT到CLIQUE归约)**:
 
 ```haskell
 reduce3SATtoClique :: 3CNF -> Graph
@@ -369,7 +369,7 @@ $$P \subseteq RP \subseteq NP \subseteq BPP$$
 
 ### 6.3 随机化算法示例
 
-**算法 6.1 (随机化快速排序)**
+**算法 6.1 (随机化快速排序)**:
 
 ```haskell
 randomizedQuickSort :: [a] -> [a]
@@ -384,7 +384,7 @@ randomElement :: [a] -> a
 randomElement xs = xs !! (randomInt 0 (length xs - 1))
 ```
 
-**算法 6.2 (随机化素数测试 - Miller-Rabin)**
+**算法 6.2 (随机化素数测试 - Miller-Rabin)**:
 
 ```haskell
 millerRabin :: Integer -> Integer -> Bool
@@ -434,7 +434,7 @@ $$P \subseteq BPP \subseteq BQP \subseteq PSPACE$$
 
 ### 7.3 量子算法
 
-**算法 7.1 (量子傅里叶变换)**
+**算法 7.1 (量子傅里叶变换)**:
 
 ```haskell
 quantumFourierTransform :: QuantumState -> QuantumState
@@ -452,7 +452,7 @@ applyQFT state n =
   in nextState
 ```
 
-**算法 7.2 (Shor算法 - 量子因子分解)**
+**算法 7.2 (Shor算法 - 量子因子分解)**:
 
 ```haskell
 shorAlgorithm :: Integer -> Integer
@@ -491,7 +491,7 @@ $$\alpha = \max_{I} \frac{A(I)}{OPT(I)}$$
 
 ### 8.2 经典近似算法
 
-**算法 8.1 (顶点覆盖的2-近似算法)**
+**算法 8.1 (顶点覆盖的2-近似算法)**:
 
 ```haskell
 approximateVertexCover :: Graph -> [Vertex]
@@ -510,7 +510,7 @@ greedyVertexCover (e:es) cover =
   in greedyVertexCover es newCover
 ```
 
-**算法 8.2 (旅行商问题的2-近似算法)**
+**算法 8.2 (旅行商问题的2-近似算法)**:
 
 ```haskell
 approximateTSP :: Graph -> [Vertex]
@@ -563,7 +563,7 @@ $$FPT \subseteq W[1] \subseteq W[2] \subseteq \cdots \subseteq W[t] \subseteq \c
 
 ### 9.2 参数化算法
 
-**算法 9.1 (顶点覆盖的FPT算法)**
+**算法 9.1 (顶点覆盖的FPT算法)**:
 
 ```haskell
 fptVertexCover :: Graph -> Int -> Bool
@@ -582,7 +582,7 @@ selectEdge graph =
   in head edges
 ```
 
-**算法 9.2 (团问题的FPT算法)**
+**算法 9.2 (团问题的FPT算法)**:
 
 ```haskell
 fptClique :: Graph -> Int -> Bool
@@ -618,7 +618,7 @@ $$(x, k) \in A \Leftrightarrow (f(x), g(k)) \in B$$
 3. **大规模问题**：使用线性或对数时间算法
 4. **NP完全问题**：使用近似算法或启发式算法
 
-**算法 10.1 (算法选择器)**
+**算法 10.1 (算法选择器)**:
 
 ```haskell
 selectAlgorithm :: Problem -> InputSize -> Algorithm
@@ -637,7 +637,7 @@ selectAlgorithm problem size =
 **定义 10.1 (性能分析)**
 性能分析是评估算法在实际环境中的表现。
 
-**算法 10.2 (性能分析器)**
+**算法 10.2 (性能分析器)**:
 
 ```haskell
 performanceAnalyzer :: Algorithm -> [Input] -> PerformanceReport
@@ -665,7 +665,7 @@ performanceAnalyzer algorithm inputs =
 3. **并行化**：利用多核处理器
 4. **近似计算**：在精度和效率间平衡
 
-**算法 10.3 (系统优化器)**
+**算法 10.3 (系统优化器)**:
 
 ```haskell
 systemOptimizer :: System -> OptimizationStrategy
@@ -692,7 +692,7 @@ systemOptimizer system =
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Arora, S., & Barak, B. (2009). Computational Complexity: A Modern Approach.
 2. Papadimitriou, C. H. (1994). Computational Complexity.
@@ -700,7 +700,7 @@ systemOptimizer system =
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [01. 自动机理论分析](../02_Formal_Language/01_Automata_Theory.md)
 - [02. 形式语法理论分析](../02_Formal_Language/02_Formal_Grammar_Theory.md)
