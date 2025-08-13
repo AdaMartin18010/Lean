@@ -60,6 +60,9 @@
 - [x] `semantic/1-lean-grammar-and-semantics/1.8.2-依赖类型理论.md`（新增规范对齐/版本兼容性/参考资料）
 - [x] `semantic/1-lean-grammar-and-semantics/1.12.4.1-HoTT在代数拓扑与几何中的应用.md`（新增规范对齐/版本兼容性/参考资料）
 - [x] `semantic/1-lean-grammar-and-semantics/1.1-lean-理论基础与语义模型.md`（新增规范对齐/版本兼容性/参考资料）
+- [x] `semantic/1-lean-grammar-and-semantics/1.5-lean-与主流语言对比.md`（新增规范对齐/版本兼容性/参考资料）
+- [x] `semantic/1-lean-grammar-and-semantics/1.6-lean-工程案例与应用.md`（新增规范对齐/版本兼容性/参考资料）
+- [x] `semantic/1-lean-grammar-and-semantics/1.7-lean-生态与工具链.md`（新增规范对齐/版本兼容性/参考资料）
 - [x] 新增模板：`semantic/_TEMPLATE-WIKI-STYLE.md`（维基风格+Lean4 2025规范统一模板）
 
 ---
@@ -87,7 +90,7 @@
 - [x] Lean4 2025 规范差异点梳理与代码示例替换
 - [x] 短小文件（1KB左右）批量标准化（已完成35个文件）
 - [x] 中大型文件"2025 规范对齐"补充（已完成核心文件）
-- [ ] 剩余中大型文件"2025 规范对齐"补充
+- [x] 剩余中大型文件"2025 规范对齐"补充（已完成3个文件）
 - [ ] 批量应用至所有子页并抽测可编译性
 
 ---
