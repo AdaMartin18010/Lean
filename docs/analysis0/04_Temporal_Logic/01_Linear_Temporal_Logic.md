@@ -111,7 +111,7 @@ LTL操作符的语义：
 
 **证明：** 通过语义定义和逻辑推理。
 
-**算法 2.1 (LTL等价性检查)**
+**算法 2.1 (LTL等价性检查)**:
 
 ```haskell
 checkLTLEquivalence :: LTLFormula -> LTLFormula -> Bool
@@ -153,7 +153,7 @@ LTL模型检查的复杂度是PSPACE完全的。
 
 ### 3.2 模型检查算法
 
-**算法 3.1 (LTL模型检查)**
+**算法 3.1 (LTL模型检查)**:
 
 ```haskell
 ltlModelCheck :: Model -> LTLFormula -> Bool
@@ -191,7 +191,7 @@ checkEmptiness automaton =
 **定义 3.3 (反例)**
 反例是违反LTL公式的路径。
 
-**算法 3.2 (反例生成)**
+**算法 3.2 (反例生成)**:
 
 ```haskell
 generateCounterExample :: Model -> LTLFormula -> Maybe Path
@@ -252,7 +252,7 @@ $$\inf(\rho) \cap F \neq \emptyset$$
 2. 构造广义Büchi自动机
 3. 将广义Büchi自动机转换为标准Büchi自动机
 
-**算法 4.1 (LTL到Büchi自动机转换)**
+**算法 4.1 (LTL到Büchi自动机转换)**:
 
 ```haskell
 ltlToBuchiAutomaton :: LTLFormula -> BuchiAutomaton
@@ -287,7 +287,7 @@ computeClosure formula =
 **定义 4.3 (自动机等价)**
 两个Büchi自动机等价，如果它们接受相同的语言。
 
-**算法 4.2 (Büchi自动机最小化)**
+**算法 4.2 (Büchi自动机最小化)**:
 
 ```haskell
 minimizeBuchiAutomaton :: BuchiAutomaton -> BuchiAutomaton
@@ -338,7 +338,7 @@ LTL公式等价性可以通过以下方法证明：
 2. **自动机证明**：转换为自动机后检查等价性
 3. **公理证明**：使用LTL公理系统
 
-**算法 5.1 (等价性检查)**
+**算法 5.1 (等价性检查)**:
 
 ```haskell
 checkLTLEquivalence :: LTLFormula -> LTLFormula -> Bool
@@ -388,7 +388,7 @@ $$\phi(x_1, x_2, \ldots, x_n)$$
 
 其中 $x_1, x_2, \ldots, x_n$ 是参数。
 
-**算法 6.1 (参数化LTL检查)**
+**算法 6.1 (参数化LTL检查)**:
 
 ```haskell
 checkParameterizedLTL :: ParameterizedLTLFormula -> ParameterValues -> Bool
@@ -418,7 +418,7 @@ $$P_{\bowtie p}[\phi]$$
 
 其中 $\bowtie \in \{<, \leq, =, \geq, >\}$ 和 $p \in [0,1]$。
 
-**算法 6.2 (概率LTL检查)**
+**算法 6.2 (概率LTL检查)**:
 
 ```haskell
 checkProbabilisticLTL :: ProbabilisticLTLFormula -> Model -> Bool
@@ -450,7 +450,7 @@ $$\mu \phi$$
 
 其中 $\mu \in [0,1]$ 是模糊度。
 
-**算法 6.3 (模糊LTL检查)**
+**算法 6.3 (模糊LTL检查)**:
 
 ```haskell
 checkFuzzyLTL :: FuzzyLTLFormula -> Model -> Double
@@ -474,7 +474,7 @@ computeFuzzyProp prop mu model =
 
 ### 7.1 LTL解析器
 
-**算法 7.1 (LTL解析器)**
+**算法 7.1 (LTL解析器)**:
 
 ```haskell
 parseLTL :: String -> LTLFormula
@@ -515,7 +515,7 @@ parseFormula tokens =
 
 ### 7.2 LTL求值器
 
-**算法 7.2 (LTL求值器)**
+**算法 7.2 (LTL求值器)**:
 
 ```haskell
 evaluateLTL :: LTLFormula -> Path -> Bool
@@ -547,7 +547,7 @@ evaluateUntil f1 f2 path position =
 
 ### 7.3 LTL优化器
 
-**算法 7.3 (LTL优化器)**
+**算法 7.3 (LTL优化器)**:
 
 ```haskell
 optimizeLTL :: LTLFormula -> LTLFormula
@@ -608,7 +608,7 @@ applySimplificationRules formula =
 - $L : S \rightarrow 2^{AP}$ 是标签函数
 - $P$ 是进程集合
 
-**算法 8.1 (并发系统验证)**
+**算法 8.1 (并发系统验证)**:
 
 ```haskell
 verifyConcurrentSystem :: ConcurrentSystem -> LTLFormula -> Bool
@@ -637,7 +637,7 @@ generateStates system =
 **定义 8.3 (互斥性质)**
 互斥性质确保两个进程不会同时进入临界区。
 
-**算法 8.2 (互斥性质检查)**
+**算法 8.2 (互斥性质检查)**:
 
 ```haskell
 checkMutualExclusion :: ConcurrentSystem -> Bool
@@ -656,7 +656,7 @@ inCriticalSection process =
 **定义 8.4 (死锁)**
 死锁是系统无法继续执行的状态。
 
-**算法 8.3 (死锁检测)**
+**算法 8.3 (死锁检测)**:
 
 ```haskell
 detectDeadlock :: ConcurrentSystem -> Bool
@@ -676,7 +676,7 @@ canProgress process =
 
 ### 9.1 Lean中的LTL实现
 
-**算法 9.1 (Lean LTL类型定义)**
+**算法 9.1 (Lean LTL类型定义)**:
 
 ```lean
 inductive LTLFormula (α : Type) where
@@ -705,7 +705,7 @@ def LTLFormula.satisfies {α : Type} (π : ℕ → α) (φ : LTLFormula α) (i :
 
 ### 9.2 Lean中的模型检查
 
-**算法 9.2 (Lean模型检查)**
+**算法 9.2 (Lean模型检查)**:
 
 ```lean
 def ModelCheck {α : Type} (M : Model α) (φ : LTLFormula α) : Prop :=
@@ -721,7 +721,7 @@ theorem model_checking_correctness {α : Type} (M : Model α) (φ : LTLFormula �
 
 ### 9.3 Lean中的自动机转换
 
-**算法 9.3 (Lean Büchi自动机)**
+**算法 9.3 (Lean Büchi自动机)**:
 
 ```lean
 structure BuchiAutomaton (α : Type) where
@@ -752,7 +752,7 @@ theorem ltl_to_buchi_equivalence {α : Type} (φ : LTLFormula α) :
 **定义 10.1 (实际系统)**
 实际系统是真实世界的软件或硬件系统。
 
-**算法 10.1 (实际系统验证)**
+**算法 10.1 (实际系统验证)**:
 
 ```haskell
 verifyRealSystem :: RealSystem -> LTLSpecification -> VerificationResult
@@ -780,7 +780,7 @@ abstractSystem system =
 **定义 10.2 (验证性能)**
 验证性能是模型检查算法的效率指标。
 
-**算法 10.2 (性能分析)**
+**算法 10.2 (性能分析)**:
 
 ```haskell
 analyzeVerificationPerformance :: Model -> LTLFormula -> PerformanceMetrics
@@ -804,7 +804,7 @@ analyzeVerificationPerformance model formula =
 **定义 10.3 (验证工具)**
 验证工具是用于LTL模型检查的软件系统。
 
-**算法 10.3 (工具集成)**
+**算法 10.3 (工具集成)**:
 
 ```haskell
 integrateVerificationTools :: System -> [VerificationTool] -> IntegratedResult
@@ -838,7 +838,7 @@ LTL不仅在学术研究中发挥重要作用，也在工业实践中得到广�
 
 ---
 
-**参考文献**
+**参考文献**:
 
 1. Pnueli, A. (1977). The temporal logic of programs.
 2. Vardi, M. Y., & Wolper, P. (1986). An automata-theoretic approach to automatic program verification.
@@ -846,7 +846,7 @@ LTL不仅在学术研究中发挥重要作用，也在工业实践中得到广�
 
 ---
 
-**相关链接**
+**相关链接**:
 
 - [02. 分支时态逻辑分析](../04_Temporal_Logic/02_Branching_Temporal_Logic.md)
 - [03. 时态控制理论](../04_Temporal_Logic/03_Temporal_Control_Theory.md)
