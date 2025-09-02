@@ -176,17 +176,26 @@ class ProjectCompletenessChecker:
         """分析各系列的完成情况"""
         series_stats = {}
         
-        # 确保从analysis目录开始分析
-        analysis_path = self.root_path / "analysis"
-        if not analysis_path.exists():
-            print(f"❌ 未找到analysis目录: {analysis_path}")
-            return series_stats
+        # 直接使用当前目录作为analysis目录
+        if (self.root_path / "1-形式化理论").exists():
+            # 在analysis目录内
+            analysis_path = self.root_path
+        else:
+            # 尝试从根目录找analysis
+            analysis_path = self.root_path / "analysis"
+            if not analysis_path.exists():
+                print(f"❌ 未找到analysis目录: {analysis_path}")
+                return series_stats
+        
+        print(f"✅ 使用分析目录: {analysis_path}")
         
         for series_name, info in self.series_info.items():
             series_path = analysis_path / series_name
             if not series_path.exists():
+                print(f"⚠️  系列目录不存在: {series_path}")
                 continue
                 
+            print(f"📁 分析系列: {series_name}")
             files_found = []
             total_score = 0
             file_count = 0
@@ -217,6 +226,8 @@ class ProjectCompletenessChecker:
                 'files': files_found,
                 'english_mirror': info['english_name']
             }
+            
+            print(f"   📊 找到 {file_count} 个文件，平均质量: {avg_quality:.1f}/100")
         
         self.results['series_analysis'] = series_stats
         return series_stats

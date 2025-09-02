@@ -1,121 +1,121 @@
 {
   "overall_stats": {
-    "total_files": 48,
-    "total_lines": 25669,
-    "total_words": 66154,
-    "total_code_blocks": 518,
-    "total_formulas": 270,
-    "total_diagrams": 80,
-    "average_quality_score": 46.5,
-    "overall_completion_rate": 93.8,
+    "total_files": 54,
+    "total_lines": 41390,
+    "total_words": 119763,
+    "total_code_blocks": 803,
+    "total_formulas": 521,
+    "total_diagrams": 116,
+    "average_quality_score": 64.2,
+    "overall_completion_rate": 93.7,
     "quality_distribution": {
       "excellent": {
-        "count": 9,
-        "percentage": 18.8
+        "count": 13,
+        "percentage": 24.1
       },
       "good": {
-        "count": 10,
-        "percentage": 20.8
+        "count": 20,
+        "percentage": 37.0
       },
       "fair": {
-        "count": 10,
-        "percentage": 20.8
+        "count": 17,
+        "percentage": 31.5
       },
       "poor": {
-        "count": 19,
-        "percentage": 39.6
+        "count": 4,
+        "percentage": 7.4
       }
     }
   },
   "series_analysis": {
     "1-形式化理论": {
-      "files_count": 31,
-      "average_quality": 30.903225806451612,
+      "files_count": 35,
+      "average_quality": 56.22857142857143,
       "completion_rate": 0.95,
       "expected_quality": 88,
       "files": [
         {
-          "path": "1.1-统一形式化理论综述.md",
+          "path": "1-形式化理论\\1.1-统一形式化理论综述.md",
           "quality": {
-            "lines": 479,
-            "words": 1013,
+            "lines": 511,
+            "words": 1066,
             "code_blocks": 16,
             "formulas": 34,
             "diagrams": 7,
-            "headers": 48,
-            "references": 19,
-            "chinese_chars": 2231,
-            "quality_score": 78,
-            "file_size_kb": 13.09375
+            "headers": 49,
+            "references": 29,
+            "chinese_chars": 2597,
+            "quality_score": 85,
+            "file_size_kb": 14.8955078125
           },
-          "size_kb": 13.09375
+          "size_kb": 14.8955078125
         },
         {
-          "path": "1.2-类型理论与证明.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明.md",
           "quality": {
-            "lines": 71,
-            "words": 132,
-            "code_blocks": 2,
+            "lines": 781,
+            "words": 3761,
+            "code_blocks": 15,
             "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
-            "references": 2,
-            "chinese_chars": 284,
-            "quality_score": 18,
-            "file_size_kb": 1.4912109375
+            "diagrams": 3,
+            "headers": 30,
+            "references": 36,
+            "chinese_chars": 1800,
+            "quality_score": 67,
+            "file_size_kb": 24.0791015625
           },
-          "size_kb": 1.4912109375
+          "size_kb": 24.0791015625
         },
         {
-          "path": "1.3-时序逻辑与控制.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制.md",
           "quality": {
-            "lines": 71,
-            "words": 112,
-            "code_blocks": 2,
-            "formulas": 1,
-            "diagrams": 1,
-            "headers": 12,
-            "references": 2,
-            "chinese_chars": 270,
-            "quality_score": 20,
-            "file_size_kb": 1.421875
-          },
-          "size_kb": 1.421875
-        },
-        {
-          "path": "1.4-Petri网与分布式系统.md",
-          "quality": {
-            "lines": 70,
-            "words": 119,
-            "code_blocks": 2,
-            "formulas": 1,
-            "diagrams": 1,
-            "headers": 12,
-            "references": 2,
-            "chinese_chars": 274,
-            "quality_score": 20,
-            "file_size_kb": 1.49609375
-          },
-          "size_kb": 1.49609375
-        },
-        {
-          "path": "1.x-其他形式化主题.md",
-          "quality": {
-            "lines": 593,
-            "words": 1500,
+            "lines": 767,
+            "words": 3582,
             "code_blocks": 16,
-            "formulas": 0,
-            "diagrams": 4,
-            "headers": 36,
-            "references": 14,
-            "chinese_chars": 2593,
-            "quality_score": 62,
-            "file_size_kb": 19.44140625
+            "formulas": 58,
+            "diagrams": 1,
+            "headers": 42,
+            "references": 79,
+            "chinese_chars": 1902,
+            "quality_score": 80,
+            "file_size_kb": 27.3583984375
           },
-          "size_kb": 19.44140625
+          "size_kb": 27.3583984375
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.1-类型理论发展简史.md",
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统.md",
+          "quality": {
+            "lines": 736,
+            "words": 2561,
+            "code_blocks": 16,
+            "formulas": 53,
+            "diagrams": 1,
+            "headers": 46,
+            "references": 91,
+            "chinese_chars": 2289,
+            "quality_score": 80,
+            "file_size_kb": 23.15625
+          },
+          "size_kb": 23.15625
+        },
+        {
+          "path": "1-形式化理论\\1.x-其他形式化主题.md",
+          "quality": {
+            "lines": 557,
+            "words": 1569,
+            "code_blocks": 15,
+            "formulas": 0,
+            "diagrams": 6,
+            "headers": 37,
+            "references": 13,
+            "chinese_chars": 1899,
+            "quality_score": 62,
+            "file_size_kb": 16.376953125
+          },
+          "size_kb": 16.376953125
+        },
+        {
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.1-类型理论发展简史.md",
           "quality": {
             "lines": 695,
             "words": 1968,
@@ -131,55 +131,55 @@
           "size_kb": 18.49609375
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.2-简单类型系统.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.2-简单类型系统.md",
           "quality": {
-            "lines": 139,
-            "words": 417,
-            "code_blocks": 9,
+            "lines": 624,
+            "words": 2079,
+            "code_blocks": 17,
             "formulas": 3,
             "diagrams": 0,
-            "headers": 17,
-            "references": 23,
-            "chinese_chars": 426,
-            "quality_score": 40,
-            "file_size_kb": 3.9111328125
+            "headers": 43,
+            "references": 55,
+            "chinese_chars": 2002,
+            "quality_score": 61,
+            "file_size_kb": 18.642578125
           },
-          "size_kb": 3.9111328125
+          "size_kb": 18.642578125
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.3-依赖类型与表达力.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.3-依赖类型与表达力.md",
           "quality": {
-            "lines": 162,
-            "words": 462,
-            "code_blocks": 10,
-            "formulas": 7,
+            "lines": 955,
+            "words": 3385,
+            "code_blocks": 25,
+            "formulas": 9,
             "diagrams": 0,
-            "headers": 19,
-            "references": 25,
-            "chinese_chars": 554,
-            "quality_score": 54,
-            "file_size_kb": 4.470703125
+            "headers": 67,
+            "references": 79,
+            "chinese_chars": 3519,
+            "quality_score": 78,
+            "file_size_kb": 29.54296875
           },
-          "size_kb": 4.470703125
+          "size_kb": 29.54296875
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.4-Curry-Howard对应.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.4-Curry-Howard对应.md",
           "quality": {
-            "lines": 213,
-            "words": 843,
-            "code_blocks": 9,
-            "formulas": 0,
+            "lines": 1037,
+            "words": 4284,
+            "code_blocks": 20,
+            "formulas": 2,
             "diagrams": 0,
-            "headers": 20,
-            "references": 26,
-            "chinese_chars": 588,
-            "quality_score": 40,
-            "file_size_kb": 6.1396484375
+            "headers": 55,
+            "references": 67,
+            "chinese_chars": 3557,
+            "quality_score": 69,
+            "file_size_kb": 34.50390625
           },
-          "size_kb": 6.1396484375
+          "size_kb": 34.50390625
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.5-同伦类型理论.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.5-同伦类型理论.md",
           "quality": {
             "lines": 206,
             "words": 730,
@@ -195,55 +195,55 @@
           "size_kb": 6.2783203125
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.5-类型检查与推导.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.5-类型检查与推导.md",
           "quality": {
-            "lines": 66,
-            "words": 115,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
+            "lines": 436,
+            "words": 1515,
+            "code_blocks": 11,
+            "formulas": 13,
+            "diagrams": 3,
+            "headers": 29,
             "references": 2,
-            "chinese_chars": 274,
-            "quality_score": 17,
-            "file_size_kb": 1.455078125
+            "chinese_chars": 1263,
+            "quality_score": 75,
+            "file_size_kb": 11.9658203125
           },
-          "size_kb": 1.455078125
+          "size_kb": 11.9658203125
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.6-归纳法与构造法.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.6-归纳法与构造法.md",
           "quality": {
-            "lines": 68,
-            "words": 125,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
-            "references": 2,
-            "chinese_chars": 262,
-            "quality_score": 17,
-            "file_size_kb": 1.44140625
+            "lines": 449,
+            "words": 1277,
+            "code_blocks": 15,
+            "formulas": 22,
+            "diagrams": 3,
+            "headers": 34,
+            "references": 11,
+            "chinese_chars": 1661,
+            "quality_score": 77,
+            "file_size_kb": 12.154296875
           },
-          "size_kb": 1.44140625
+          "size_kb": 12.154296875
         },
         {
-          "path": "1.2-类型理论与证明\\1.2.7-类型理论在Lean中的应用.md",
+          "path": "1-形式化理论\\1.2-类型理论与证明\\1.2.7-类型理论在Lean中的应用.md",
           "quality": {
-            "lines": 65,
-            "words": 137,
-            "code_blocks": 2,
+            "lines": 504,
+            "words": 1690,
+            "code_blocks": 12,
             "formulas": 0,
-            "diagrams": 1,
-            "headers": 9,
-            "references": 2,
-            "chinese_chars": 283,
-            "quality_score": 17,
-            "file_size_kb": 1.52734375
+            "diagrams": 3,
+            "headers": 28,
+            "references": 11,
+            "chinese_chars": 1391,
+            "quality_score": 62,
+            "file_size_kb": 12.8076171875
           },
-          "size_kb": 1.52734375
+          "size_kb": 12.8076171875
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.1-时序逻辑基础.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.1-时序逻辑基础.md",
           "quality": {
             "lines": 333,
             "words": 902,
@@ -259,23 +259,23 @@
           "size_kb": 8.8935546875
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.2-主要时序逻辑系统.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.2-主要时序逻辑系统.md",
           "quality": {
-            "lines": 95,
-            "words": 236,
-            "code_blocks": 2,
-            "formulas": 0,
+            "lines": 621,
+            "words": 2031,
+            "code_blocks": 23,
+            "formulas": 43,
             "diagrams": 0,
-            "headers": 12,
-            "references": 16,
-            "chinese_chars": 420,
-            "quality_score": 18,
-            "file_size_kb": 2.572265625
+            "headers": 40,
+            "references": 48,
+            "chinese_chars": 2423,
+            "quality_score": 79,
+            "file_size_kb": 19.4775390625
           },
-          "size_kb": 2.572265625
+          "size_kb": 19.4775390625
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.3-时序逻辑建模与验证.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.3-时序逻辑建模与验证.md",
           "quality": {
             "lines": 293,
             "words": 784,
@@ -291,7 +291,7 @@
           "size_kb": 7.4541015625
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.4-控制理论与应用.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.4-控制理论与应用.md",
           "quality": {
             "lines": 430,
             "words": 1167,
@@ -307,23 +307,23 @@
           "size_kb": 12.107421875
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.4-控制系统的时序约束证明.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.4-控制系统的时序约束证明.md",
           "quality": {
-            "lines": 66,
-            "words": 101,
-            "code_blocks": 2,
+            "lines": 281,
+            "words": 679,
+            "code_blocks": 5,
             "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
-            "references": 2,
-            "chinese_chars": 275,
-            "quality_score": 17,
-            "file_size_kb": 1.4345703125
+            "diagrams": 3,
+            "headers": 35,
+            "references": 9,
+            "chinese_chars": 1152,
+            "quality_score": 51,
+            "file_size_kb": 7.9130859375
           },
-          "size_kb": 1.4345703125
+          "size_kb": 7.9130859375
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.5-典型工程案例.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.5-典型工程案例.md",
           "quality": {
             "lines": 589,
             "words": 1579,
@@ -339,71 +339,71 @@
           "size_kb": 18.5478515625
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.5-典型案例与实现.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.5-典型案例与实现.md",
           "quality": {
-            "lines": 64,
-            "words": 111,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 9,
-            "references": 2,
-            "chinese_chars": 274,
-            "quality_score": 17,
-            "file_size_kb": 1.4140625
-          },
-          "size_kb": 1.4140625
-        },
-        {
-          "path": "1.3-时序逻辑与控制\\1.3.6-图表与多表征.md",
-          "quality": {
-            "lines": 55,
-            "words": 87,
-            "code_blocks": 3,
+            "lines": 261,
+            "words": 600,
+            "code_blocks": 5,
             "formulas": 0,
             "diagrams": 3,
-            "headers": 8,
-            "references": 2,
-            "chinese_chars": 200,
-            "quality_score": 29,
-            "file_size_kb": 1.1201171875
+            "headers": 29,
+            "references": 9,
+            "chinese_chars": 1069,
+            "quality_score": 51,
+            "file_size_kb": 7.2509765625
           },
-          "size_kb": 1.1201171875
+          "size_kb": 7.2509765625
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.7-相关性与交叉引用.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.6-图表与多表征.md",
           "quality": {
-            "lines": 42,
-            "words": 57,
+            "lines": 190,
+            "words": 423,
+            "code_blocks": 8,
+            "formulas": 0,
+            "diagrams": 8,
+            "headers": 24,
+            "references": 9,
+            "chinese_chars": 726,
+            "quality_score": 46,
+            "file_size_kb": 4.75
+          },
+          "size_kb": 4.75
+        },
+        {
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.7-相关性与交叉引用.md",
+          "quality": {
+            "lines": 111,
+            "words": 177,
             "code_blocks": 0,
             "formulas": 0,
             "diagrams": 0,
-            "headers": 8,
-            "references": 6,
-            "chinese_chars": 341,
-            "quality_score": 5,
-            "file_size_kb": 1.439453125
+            "headers": 12,
+            "references": 12,
+            "chinese_chars": 953,
+            "quality_score": 17,
+            "file_size_kb": 3.8212890625
           },
-          "size_kb": 1.439453125
+          "size_kb": 3.8212890625
         },
         {
-          "path": "1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
+          "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
           "quality": {
-            "lines": 40,
-            "words": 106,
+            "lines": 108,
+            "words": 344,
             "code_blocks": 0,
             "formulas": 0,
             "diagrams": 0,
-            "headers": 7,
+            "headers": 20,
             "references": 0,
-            "chinese_chars": 150,
-            "quality_score": 4,
-            "file_size_kb": 1.208984375
+            "chinese_chars": 406,
+            "quality_score": 15,
+            "file_size_kb": 3.6513671875
           },
-          "size_kb": 1.208984375
+          "size_kb": 3.6513671875
         },
         {
-          "path": "1.4-Petri网与分布式系统\\1.4.1-Petri网基础与建模.md",
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.1-Petri网基础与建模.md",
           "quality": {
             "lines": 698,
             "words": 1900,
@@ -419,128 +419,192 @@
           "size_kb": 23.4921875
         },
         {
-          "path": "1.4-Petri网与分布式系统\\1.4.2-分布式系统的Petri网表达.md",
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.2-分布式系统的Petri网表达.md",
           "quality": {
-            "lines": 59,
-            "words": 93,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 10,
-            "references": 2,
-            "chinese_chars": 249,
-            "quality_score": 16,
-            "file_size_kb": 1.3681640625
-          },
-          "size_kb": 1.3681640625
-        },
-        {
-          "path": "1.4-Petri网与分布式系统\\1.4.3-并发与同步分析.md",
-          "quality": {
-            "lines": 69,
-            "words": 116,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
-            "references": 2,
-            "chinese_chars": 301,
-            "quality_score": 17,
-            "file_size_kb": 1.6220703125
-          },
-          "size_kb": 1.6220703125
-        },
-        {
-          "path": "1.4-Petri网与分布式系统\\1.4.4-一致性与死锁证明.md",
-          "quality": {
-            "lines": 67,
-            "words": 112,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 11,
-            "references": 2,
-            "chinese_chars": 327,
-            "quality_score": 17,
-            "file_size_kb": 1.587890625
-          },
-          "size_kb": 1.587890625
-        },
-        {
-          "path": "1.4-Petri网与分布式系统\\1.4.5-典型工程案例.md",
-          "quality": {
-            "lines": 58,
-            "words": 100,
-            "code_blocks": 2,
-            "formulas": 0,
-            "diagrams": 1,
-            "headers": 9,
-            "references": 2,
-            "chinese_chars": 253,
-            "quality_score": 16,
-            "file_size_kb": 1.36328125
-          },
-          "size_kb": 1.36328125
-        },
-        {
-          "path": "1.4-Petri网与分布式系统\\1.4.6-图表与多表征.md",
-          "quality": {
-            "lines": 61,
-            "words": 93,
-            "code_blocks": 4,
+            "lines": 261,
+            "words": 545,
+            "code_blocks": 7,
             "formulas": 0,
             "diagrams": 4,
-            "headers": 9,
-            "references": 2,
-            "chinese_chars": 228,
-            "quality_score": 33,
-            "file_size_kb": 1.255859375
+            "headers": 37,
+            "references": 3,
+            "chinese_chars": 1168,
+            "quality_score": 50,
+            "file_size_kb": 6.9150390625
           },
-          "size_kb": 1.255859375
+          "size_kb": 6.9150390625
         },
         {
-          "path": "1.4-Petri网与分布式系统\\1.4.7-相关性与交叉引用.md",
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.3-并发与同步分析.md",
           "quality": {
-            "lines": 42,
-            "words": 57,
+            "lines": 304,
+            "words": 649,
+            "code_blocks": 7,
+            "formulas": 0,
+            "diagrams": 4,
+            "headers": 44,
+            "references": 9,
+            "chinese_chars": 1602,
+            "quality_score": 51,
+            "file_size_kb": 9.01953125
+          },
+          "size_kb": 9.01953125
+        },
+        {
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.4-一致性与死锁证明.md",
+          "quality": {
+            "lines": 278,
+            "words": 614,
+            "code_blocks": 6,
+            "formulas": 0,
+            "diagrams": 3,
+            "headers": 41,
+            "references": 9,
+            "chinese_chars": 1475,
+            "quality_score": 51,
+            "file_size_kb": 8.212890625
+          },
+          "size_kb": 8.212890625
+        },
+        {
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.5-典型工程案例.md",
+          "quality": {
+            "lines": 240,
+            "words": 524,
+            "code_blocks": 5,
+            "formulas": 0,
+            "diagrams": 3,
+            "headers": 30,
+            "references": 9,
+            "chinese_chars": 1055,
+            "quality_score": 51,
+            "file_size_kb": 6.6259765625
+          },
+          "size_kb": 6.6259765625
+        },
+        {
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.6-图表与多表征.md",
+          "quality": {
+            "lines": 246,
+            "words": 492,
+            "code_blocks": 12,
+            "formulas": 0,
+            "diagrams": 12,
+            "headers": 29,
+            "references": 9,
+            "chinese_chars": 821,
+            "quality_score": 56,
+            "file_size_kb": 5.7080078125
+          },
+          "size_kb": 5.7080078125
+        },
+        {
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.7-相关性与交叉引用.md",
+          "quality": {
+            "lines": 134,
+            "words": 269,
             "code_blocks": 0,
             "formulas": 0,
             "diagrams": 0,
-            "headers": 8,
-            "references": 6,
-            "chinese_chars": 322,
-            "quality_score": 5,
-            "file_size_kb": 1.37890625
+            "headers": 16,
+            "references": 12,
+            "chinese_chars": 953,
+            "quality_score": 17,
+            "file_size_kb": 4.7119140625
           },
-          "size_kb": 1.37890625
+          "size_kb": 4.7119140625
         },
         {
-          "path": "1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
+          "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
           "quality": {
-            "lines": 40,
-            "words": 102,
+            "lines": 115,
+            "words": 359,
             "code_blocks": 0,
             "formulas": 0,
             "diagrams": 0,
-            "headers": 7,
+            "headers": 21,
             "references": 0,
-            "chinese_chars": 126,
-            "quality_score": 4,
-            "file_size_kb": 1.1533203125
+            "chinese_chars": 448,
+            "quality_score": 15,
+            "file_size_kb": 4.1572265625
           },
-          "size_kb": 1.1533203125
+          "size_kb": 4.1572265625
+        },
+        {
+          "path": "1-形式化理论\\1.5-形式语言与自动化理论\\1.5.1-自动机理论.md",
+          "quality": {
+            "lines": 628,
+            "words": 2192,
+            "code_blocks": 15,
+            "formulas": 29,
+            "diagrams": 0,
+            "headers": 27,
+            "references": 35,
+            "chinese_chars": 1227,
+            "quality_score": 72,
+            "file_size_kb": 17.9990234375
+          },
+          "size_kb": 17.9990234375
+        },
+        {
+          "path": "1-形式化理论\\1.5-形式语言与自动化理论\\1.5.2-形式文法理论.md",
+          "quality": {
+            "lines": 640,
+            "words": 2168,
+            "code_blocks": 12,
+            "formulas": 9,
+            "diagrams": 0,
+            "headers": 23,
+            "references": 31,
+            "chinese_chars": 1107,
+            "quality_score": 69,
+            "file_size_kb": 19.21875
+          },
+          "size_kb": 19.21875
+        },
+        {
+          "path": "1-形式化理论\\1.5-形式语言与自动化理论\\1.5.3-语言层次结构.md",
+          "quality": {
+            "lines": 557,
+            "words": 1803,
+            "code_blocks": 12,
+            "formulas": 1,
+            "diagrams": 0,
+            "headers": 23,
+            "references": 31,
+            "chinese_chars": 1636,
+            "quality_score": 53,
+            "file_size_kb": 18.9677734375
+          },
+          "size_kb": 18.9677734375
+        },
+        {
+          "path": "1-形式化理论\\1.5-形式语言与自动化理论\\1.5.4-形式语言与计算理论.md",
+          "quality": {
+            "lines": 707,
+            "words": 2357,
+            "code_blocks": 12,
+            "formulas": 0,
+            "diagrams": 0,
+            "headers": 23,
+            "references": 30,
+            "chinese_chars": 2021,
+            "quality_score": 51,
+            "file_size_kb": 23.3095703125
+          },
+          "size_kb": 23.3095703125
         }
       ],
       "english_mirror": "1-formal-theory"
     },
     "2-数学基础与应用": {
       "files_count": 3,
-      "average_quality": 47.666666666666664,
+      "average_quality": 68.66666666666667,
       "completion_rate": 0.92,
       "expected_quality": 85,
       "files": [
         {
-          "path": "2.1-数学内容全景分析.md",
+          "path": "2-数学基础与应用\\2.1-数学内容全景分析.md",
           "quality": {
             "lines": 607,
             "words": 1392,
@@ -556,23 +620,23 @@
           "size_kb": 17.5419921875
         },
         {
-          "path": "2.2-数学与形式化语言关系.md",
+          "path": "2-数学基础与应用\\2.2-数学与形式化语言关系.md",
           "quality": {
-            "lines": 37,
-            "words": 67,
-            "code_blocks": 1,
-            "formulas": 0,
+            "lines": 616,
+            "words": 2496,
+            "code_blocks": 9,
+            "formulas": 12,
             "diagrams": 0,
-            "headers": 5,
-            "references": 9,
-            "chinese_chars": 154,
-            "quality_score": 7,
-            "file_size_kb": 0.9287109375
+            "headers": 50,
+            "references": 101,
+            "chinese_chars": 2872,
+            "quality_score": 70,
+            "file_size_kb": 22.3798828125
           },
-          "size_kb": 0.9287109375
+          "size_kb": 22.3798828125
         },
         {
-          "path": "2.x-其他数学主题.md",
+          "path": "2-数学基础与应用\\2.x-其他数学主题.md",
           "quality": {
             "lines": 504,
             "words": 2211,
@@ -592,12 +656,12 @@
     },
     "3-哲学与科学原理": {
       "files_count": 3,
-      "average_quality": 79.0,
+      "average_quality": 80.0,
       "completion_rate": 0.9,
       "expected_quality": 90,
       "files": [
         {
-          "path": "3.1-哲学内容全景分析.md",
+          "path": "3-哲学与科学原理\\3.1-哲学内容全景分析.md",
           "quality": {
             "lines": 892,
             "words": 1659,
@@ -613,23 +677,23 @@
           "size_kb": 24.025390625
         },
         {
-          "path": "3.2-哲学与形式化推理.md",
+          "path": "3-哲学与科学原理\\3.2-哲学与形式化推理.md",
           "quality": {
-            "lines": 542,
-            "words": 1417,
+            "lines": 616,
+            "words": 1730,
             "code_blocks": 16,
             "formulas": 0,
             "diagrams": 3,
-            "headers": 30,
-            "references": 39,
-            "chinese_chars": 2095,
-            "quality_score": 67,
-            "file_size_kb": 16.3505859375
+            "headers": 37,
+            "references": 51,
+            "chinese_chars": 2298,
+            "quality_score": 70,
+            "file_size_kb": 19.5712890625
           },
-          "size_kb": 16.3505859375
+          "size_kb": 19.5712890625
         },
         {
-          "path": "3.x-其他哲学主题.md",
+          "path": "3-哲学与科学原理\\3.x-其他哲学主题.md",
           "quality": {
             "lines": 856,
             "words": 2330,
@@ -649,44 +713,44 @@
     },
     "4-行业领域分析": {
       "files_count": 3,
-      "average_quality": 75.33333333333333,
+      "average_quality": 79.33333333333333,
       "completion_rate": 0.94,
       "expected_quality": 92,
       "files": [
         {
-          "path": "4.1-人工智能与机器学习.md",
+          "path": "4-行业领域分析\\4.1-人工智能与机器学习.md",
           "quality": {
-            "lines": 893,
-            "words": 2063,
-            "code_blocks": 19,
+            "lines": 1185,
+            "words": 2833,
+            "code_blocks": 21,
             "formulas": 0,
-            "diagrams": 8,
+            "diagrams": 5,
             "headers": 34,
             "references": 48,
-            "chinese_chars": 1592,
-            "quality_score": 69,
-            "file_size_kb": 25.8505859375
+            "chinese_chars": 1681,
+            "quality_score": 79,
+            "file_size_kb": 34.0625
           },
-          "size_kb": 25.8505859375
+          "size_kb": 34.0625
         },
         {
-          "path": "4.2-物联网与边缘计算.md",
+          "path": "4-行业领域分析\\4.2-物联网与边缘计算.md",
           "quality": {
-            "lines": 1490,
-            "words": 3870,
+            "lines": 1514,
+            "words": 3920,
             "code_blocks": 22,
             "formulas": 30,
             "diagrams": 2,
-            "headers": 36,
-            "references": 39,
-            "chinese_chars": 2664,
-            "quality_score": 92,
-            "file_size_kb": 49.4052734375
+            "headers": 40,
+            "references": 49,
+            "chinese_chars": 2959,
+            "quality_score": 94,
+            "file_size_kb": 50.779296875
           },
-          "size_kb": 49.4052734375
+          "size_kb": 50.779296875
         },
         {
-          "path": "4.x-其他行业主题.md",
+          "path": "4-行业领域分析\\4.x-其他行业主题.md",
           "quality": {
             "lines": 1078,
             "words": 2408,
@@ -705,13 +769,13 @@
       "english_mirror": "4-industry-domains-analysis"
     },
     "5-架构与设计模式": {
-      "files_count": 2,
-      "average_quality": 75.0,
+      "files_count": 3,
+      "average_quality": 69.66666666666667,
       "completion_rate": 0.88,
       "expected_quality": 86,
       "files": [
         {
-          "path": "5.1-架构设计与形式化分析.md",
+          "path": "5-架构与设计模式\\5.1-架构设计与形式化分析.md",
           "quality": {
             "lines": 1694,
             "words": 3890,
@@ -727,48 +791,80 @@
           "size_kb": 51.146484375
         },
         {
-          "path": "5.x-其他架构主题.md",
+          "path": "5-架构与设计模式\\5.2-设计模式与代码实践.md",
           "quality": {
-            "lines": 1924,
-            "words": 4247,
+            "lines": 1119,
+            "words": 2895,
+            "code_blocks": 19,
+            "formulas": 2,
+            "diagrams": 0,
+            "headers": 50,
+            "references": 8,
+            "chinese_chars": 1241,
+            "quality_score": 55,
+            "file_size_kb": 29.8173828125
+          },
+          "size_kb": 29.8173828125
+        },
+        {
+          "path": "5-架构与设计模式\\5.x-其他架构主题.md",
+          "quality": {
+            "lines": 1945,
+            "words": 4292,
             "code_blocks": 22,
             "formulas": 3,
             "diagrams": 1,
             "headers": 45,
-            "references": 32,
-            "chinese_chars": 2474,
-            "quality_score": 72,
-            "file_size_kb": 60.06640625
+            "references": 53,
+            "chinese_chars": 2724,
+            "quality_score": 76,
+            "file_size_kb": 61.154296875
           },
-          "size_kb": 60.06640625
+          "size_kb": 61.154296875
         }
       ],
       "english_mirror": "5-architecture-and-design-patterns"
     },
     "6-编程语言与实现": {
-      "files_count": 3,
-      "average_quality": 90.0,
+      "files_count": 4,
+      "average_quality": 83.5,
       "completion_rate": 0.93,
       "expected_quality": 89,
       "files": [
         {
-          "path": "6.1-lean语言与形式化证明.md",
+          "path": "6-编程语言与实现\\6.1-lean语言与形式化证明.md",
           "quality": {
-            "lines": 1201,
-            "words": 5052,
-            "code_blocks": 26,
-            "formulas": 13,
+            "lines": 1560,
+            "words": 5904,
+            "code_blocks": 31,
+            "formulas": 17,
             "diagrams": 0,
-            "headers": 46,
-            "references": 57,
-            "chinese_chars": 2992,
+            "headers": 51,
+            "references": 70,
+            "chinese_chars": 3797,
             "quality_score": 85,
-            "file_size_kb": 37.60546875
+            "file_size_kb": 47.056640625
           },
-          "size_kb": 37.60546875
+          "size_kb": 47.056640625
         },
         {
-          "path": "6.2-rust_haskell代码实践.md",
+          "path": "6-编程语言与实现\\6.1.1-lean语言与形式逻辑关系分析.md",
+          "quality": {
+            "lines": 1134,
+            "words": 5246,
+            "code_blocks": 18,
+            "formulas": 2,
+            "diagrams": 0,
+            "headers": 57,
+            "references": 77,
+            "chinese_chars": 3703,
+            "quality_score": 64,
+            "file_size_kb": 39.1220703125
+          },
+          "size_kb": 39.1220703125
+        },
+        {
+          "path": "6-编程语言与实现\\6.2-rust_haskell代码实践.md",
           "quality": {
             "lines": 1848,
             "words": 5080,
@@ -784,7 +880,7 @@
           "size_kb": 46.287109375
         },
         {
-          "path": "6.x-其他实现主题.md",
+          "path": "6-编程语言与实现\\6.x-其他实现主题.md",
           "quality": {
             "lines": 2146,
             "words": 5930,
@@ -804,57 +900,57 @@
     },
     "7-验证与工程实践": {
       "files_count": 3,
-      "average_quality": 82.66666666666667,
+      "average_quality": 90.0,
       "completion_rate": 0.91,
       "expected_quality": 87,
       "files": [
         {
-          "path": "7.1-形式化验证架构.md",
+          "path": "7-验证与工程实践\\7.1-形式化验证架构.md",
           "quality": {
-            "lines": 787,
-            "words": 2050,
-            "code_blocks": 12,
-            "formulas": 1,
-            "diagrams": 3,
-            "headers": 26,
-            "references": 39,
-            "chinese_chars": 1300,
-            "quality_score": 69,
-            "file_size_kb": 22.7099609375
-          },
-          "size_kb": 22.7099609375
-        },
-        {
-          "path": "7.2-工程实践案例.md",
-          "quality": {
-            "lines": 2032,
-            "words": 4456,
+            "lines": 1279,
+            "words": 3513,
             "code_blocks": 20,
-            "formulas": 22,
-            "diagrams": 3,
-            "headers": 45,
-            "references": 29,
-            "chinese_chars": 2103,
-            "quality_score": 95,
-            "file_size_kb": 55.8427734375
+            "formulas": 2,
+            "diagrams": 4,
+            "headers": 46,
+            "references": 56,
+            "chinese_chars": 2022,
+            "quality_score": 84,
+            "file_size_kb": 37.4775390625
           },
-          "size_kb": 55.8427734375
+          "size_kb": 37.4775390625
         },
         {
-          "path": "7.x-其他实践主题.md",
+          "path": "7-验证与工程实践\\7.2-工程实践案例.md",
           "quality": {
-            "lines": 1139,
-            "words": 2656,
-            "code_blocks": 11,
+            "lines": 2765,
+            "words": 6083,
+            "code_blocks": 26,
+            "formulas": 22,
+            "diagrams": 4,
+            "headers": 65,
+            "references": 52,
+            "chinese_chars": 2990,
+            "quality_score": 100,
+            "file_size_kb": 76.2841796875
+          },
+          "size_kb": 76.2841796875
+        },
+        {
+          "path": "7-验证与工程实践\\7.x-其他实践主题.md",
+          "quality": {
+            "lines": 1749,
+            "words": 3926,
+            "code_blocks": 16,
             "formulas": 9,
             "diagrams": 2,
-            "headers": 28,
-            "references": 30,
-            "chinese_chars": 1266,
-            "quality_score": 84,
-            "file_size_kb": 34.9501953125
+            "headers": 39,
+            "references": 44,
+            "chinese_chars": 1698,
+            "quality_score": 86,
+            "file_size_kb": 52.830078125
           },
-          "size_kb": 34.9501953125
+          "size_kb": 52.830078125
         }
       ],
       "english_mirror": "7-verification-and-engineering-practice"
@@ -864,55 +960,71 @@
   "top_performers": [
     {
       "series": "6-编程语言与实现",
-      "path": "6.2-rust_haskell代码实践.md",
+      "path": "6-编程语言与实现\\6.2-rust_haskell代码实践.md",
       "quality_score": 100,
       "lines": 1848,
       "code_blocks": 44,
       "formulas": 11
     },
     {
+      "series": "7-验证与工程实践",
+      "path": "7-验证与工程实践\\7.2-工程实践案例.md",
+      "quality_score": 100,
+      "lines": 2765,
+      "code_blocks": 26,
+      "formulas": 22
+    },
+    {
       "series": "3-哲学与科学原理",
-      "path": "3.1-哲学内容全景分析.md",
+      "path": "3-哲学与科学原理\\3.1-哲学内容全景分析.md",
       "quality_score": 95,
       "lines": 892,
       "code_blocks": 25,
       "formulas": 29
     },
     {
-      "series": "7-验证与工程实践",
-      "path": "7.2-工程实践案例.md",
-      "quality_score": 95,
-      "lines": 2032,
-      "code_blocks": 20,
-      "formulas": 22
-    },
-    {
       "series": "4-行业领域分析",
-      "path": "4.2-物联网与边缘计算.md",
-      "quality_score": 92,
-      "lines": 1490,
+      "path": "4-行业领域分析\\4.2-物联网与边缘计算.md",
+      "quality_score": 94,
+      "lines": 1514,
       "code_blocks": 22,
       "formulas": 30
     },
     {
       "series": "2-数学基础与应用",
-      "path": "2.1-数学内容全景分析.md",
+      "path": "2-数学基础与应用\\2.1-数学内容全景分析.md",
       "quality_score": 90,
       "lines": 607,
       "code_blocks": 12,
       "formulas": 65
     },
     {
-      "series": "6-编程语言与实现",
-      "path": "6.1-lean语言与形式化证明.md",
+      "series": "7-验证与工程实践",
+      "path": "7-验证与工程实践\\7.x-其他实践主题.md",
+      "quality_score": 86,
+      "lines": 1749,
+      "code_blocks": 16,
+      "formulas": 9
+    },
+    {
+      "series": "1-形式化理论",
+      "path": "1-形式化理论\\1.1-统一形式化理论综述.md",
       "quality_score": 85,
-      "lines": 1201,
-      "code_blocks": 26,
-      "formulas": 13
+      "lines": 511,
+      "code_blocks": 16,
+      "formulas": 34
     },
     {
       "series": "6-编程语言与实现",
-      "path": "6.x-其他实现主题.md",
+      "path": "6-编程语言与实现\\6.1-lean语言与形式化证明.md",
+      "quality_score": 85,
+      "lines": 1560,
+      "code_blocks": 31,
+      "formulas": 17
+    },
+    {
+      "series": "6-编程语言与实现",
+      "path": "6-编程语言与实现\\6.x-其他实现主题.md",
       "quality_score": 85,
       "lines": 2146,
       "code_blocks": 34,
@@ -920,220 +1032,88 @@
     },
     {
       "series": "7-验证与工程实践",
-      "path": "7.x-其他实践主题.md",
+      "path": "7-验证与工程实践\\7.1-形式化验证架构.md",
       "quality_score": 84,
-      "lines": 1139,
-      "code_blocks": 11,
-      "formulas": 9
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.2-类型理论与证明\\1.2.1-类型理论发展简史.md",
-      "quality_score": 80,
-      "lines": 695,
-      "code_blocks": 23,
-      "formulas": 13
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.1-统一形式化理论综述.md",
-      "quality_score": 78,
-      "lines": 479,
-      "code_blocks": 16,
-      "formulas": 34
+      "lines": 1279,
+      "code_blocks": 20,
+      "formulas": 2
     }
   ],
   "improvement_needed": [
     {
       "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.6-图表与多表征.md",
-      "quality_score": 29,
-      "lines": 55,
-      "code_blocks": 3,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制.md",
-      "quality_score": 20,
-      "lines": 71,
-      "code_blocks": 2,
-      "formulas": 1
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统.md",
-      "quality_score": 20,
-      "lines": 70,
-      "code_blocks": 2,
-      "formulas": 1
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.2-类型理论与证明.md",
-      "quality_score": 18,
-      "lines": 71,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.2-主要时序逻辑系统.md",
-      "quality_score": 18,
-      "lines": 95,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.2-类型理论与证明\\1.2.5-类型检查与推导.md",
+      "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.7-相关性与交叉引用.md",
       "quality_score": 17,
-      "lines": 66,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.2-类型理论与证明\\1.2.6-归纳法与构造法.md",
-      "quality_score": 17,
-      "lines": 68,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.2-类型理论与证明\\1.2.7-类型理论在Lean中的应用.md",
-      "quality_score": 17,
-      "lines": 65,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.4-控制系统的时序约束证明.md",
-      "quality_score": 17,
-      "lines": 66,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.5-典型案例与实现.md",
-      "quality_score": 17,
-      "lines": 64,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.3-并发与同步分析.md",
-      "quality_score": 17,
-      "lines": 69,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.4-一致性与死锁证明.md",
-      "quality_score": 17,
-      "lines": 67,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.2-分布式系统的Petri网表达.md",
-      "quality_score": 16,
-      "lines": 59,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.5-典型工程案例.md",
-      "quality_score": 16,
-      "lines": 58,
-      "code_blocks": 2,
-      "formulas": 0
-    },
-    {
-      "series": "2-数学基础与应用",
-      "path": "2.2-数学与形式化语言关系.md",
-      "quality_score": 7,
-      "lines": 37,
-      "code_blocks": 1,
-      "formulas": 0
-    },
-    {
-      "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.7-相关性与交叉引用.md",
-      "quality_score": 5,
-      "lines": 42,
+      "lines": 111,
       "code_blocks": 0,
       "formulas": 0
     },
     {
       "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.7-相关性与交叉引用.md",
-      "quality_score": 5,
-      "lines": 42,
+      "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.7-相关性与交叉引用.md",
+      "quality_score": 17,
+      "lines": 134,
       "code_blocks": 0,
       "formulas": 0
     },
     {
       "series": "1-形式化理论",
-      "path": "1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
-      "quality_score": 4,
-      "lines": 40,
+      "path": "1-形式化理论\\1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
+      "quality_score": 15,
+      "lines": 108,
       "code_blocks": 0,
       "formulas": 0
     },
     {
       "series": "1-形式化理论",
-      "path": "1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
-      "quality_score": 4,
-      "lines": 40,
+      "path": "1-形式化理论\\1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
+      "quality_score": 15,
+      "lines": 115,
       "code_blocks": 0,
       "formulas": 0
     }
   ],
   "english_mirrors": {
     "1-形式化理论": {
-      "chinese_files": 31,
-      "english_files": 34,
-      "coverage_rate": 109.7,
+      "chinese_files": 35,
+      "english_files": 51,
+      "coverage_rate": 145.7,
       "missing_mirrors": [
-        "1.4-Petri网与分布式系统\\1.4.2-分布式系统的Petri网表达.md",
-        "1.2-类型理论与证明\\1.2.6-归纳法与构造法.md",
-        "1.x-其他形式化主题.md",
-        "1.4-Petri网与分布式系统.md",
-        "1.2-类型理论与证明\\1.2.3-依赖类型与表达力.md",
-        "1.4-Petri网与分布式系统\\1.4.6-图表与多表征.md",
-        "1.2-类型理论与证明\\1.2.1-类型理论发展简史.md",
-        "1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
-        "1.1-统一形式化理论综述.md",
-        "1.2-类型理论与证明\\1.2.7-类型理论在Lean中的应用.md",
-        "1.4-Petri网与分布式系统\\1.4.5-典型工程案例.md",
-        "1.3-时序逻辑与控制\\1.3.5-典型案例与实现.md",
-        "1.2-类型理论与证明\\1.2.5-同伦类型理论.md",
-        "1.4-Petri网与分布式系统\\1.4.1-Petri网基础与建模.md",
         "1.3-时序逻辑与控制\\1.3.4-控制理论与应用.md",
-        "1.3-时序逻辑与控制\\1.3.4-控制系统的时序约束证明.md",
         "1.2-类型理论与证明\\1.2.4-Curry-Howard对应.md",
-        "1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
-        "1.2-类型理论与证明.md",
-        "1.2-类型理论与证明\\1.2.5-类型检查与推导.md",
-        "1.4-Petri网与分布式系统\\1.4.3-并发与同步分析.md",
-        "1.2-类型理论与证明\\1.2.2-简单类型系统.md",
         "1.3-时序逻辑与控制\\1.3.5-典型工程案例.md",
-        "1.3-时序逻辑与控制\\1.3.6-图表与多表征.md",
-        "1.4-Petri网与分布式系统\\1.4.4-一致性与死锁证明.md",
+        "1.4-Petri网与分布式系统\\1.4.1-Petri网基础与建模.md",
+        "1.3-时序逻辑与控制\\1.3.1-时序逻辑基础.md",
+        "1.2-类型理论与证明\\1.2.3-依赖类型与表达力.md",
+        "1.2-类型理论与证明\\1.2.2-简单类型系统.md",
         "1.4-Petri网与分布式系统\\1.4.7-相关性与交叉引用.md",
-        "1.3-时序逻辑与控制\\1.3.2-主要时序逻辑系统.md",
-        "1.3-时序逻辑与控制.md",
+        "1.4-Petri网与分布式系统\\1.4.3-并发与同步分析.md",
+        "1.5-形式语言与自动化理论\\1.5.3-语言层次结构.md",
         "1.3-时序逻辑与控制\\1.3.3-时序逻辑建模与验证.md",
+        "1.2-类型理论与证明.md",
+        "1.4-Petri网与分布式系统\\1.4.4-一致性与死锁证明.md",
+        "1.2-类型理论与证明\\1.2.1-类型理论发展简史.md",
+        "1.2-类型理论与证明\\1.2.5-同伦类型理论.md",
+        "1.4-Petri网与分布式系统\\1.4.2-分布式系统的Petri网表达.md",
+        "1.3-时序逻辑与控制.md",
+        "1.5-形式语言与自动化理论\\1.5.1-自动机理论.md",
+        "1.5-形式语言与自动化理论\\1.5.4-形式语言与计算理论.md",
+        "1.2-类型理论与证明\\1.2.7-类型理论在Lean中的应用.md",
+        "1.4-Petri网与分布式系统\\1.4.8-参考文献与延伸阅读.md",
+        "1.x-其他形式化主题.md",
+        "1.4-Petri网与分布式系统\\1.4.5-典型工程案例.md",
+        "1.4-Petri网与分布式系统\\1.4.6-图表与多表征.md",
+        "1.4-Petri网与分布式系统.md",
+        "1.3-时序逻辑与控制\\1.3.5-典型案例与实现.md",
+        "1.3-时序逻辑与控制\\1.3.8-参考文献与延伸阅读.md",
+        "1.5-形式语言与自动化理论\\1.5.2-形式文法理论.md",
+        "1.2-类型理论与证明\\1.2.6-归纳法与构造法.md",
+        "1.3-时序逻辑与控制\\1.3.4-控制系统的时序约束证明.md",
+        "1.3-时序逻辑与控制\\1.3.2-主要时序逻辑系统.md",
+        "1.3-时序逻辑与控制\\1.3.6-图表与多表征.md",
+        "1.1-统一形式化理论综述.md",
         "1.3-时序逻辑与控制\\1.3.7-相关性与交叉引用.md",
-        "1.3-时序逻辑与控制\\1.3.1-时序逻辑基础.md"
+        "1.2-类型理论与证明\\1.2.5-类型检查与推导.md"
       ]
     },
     "2-数学基础与应用": {
@@ -1142,8 +1122,8 @@
       "coverage_rate": 133.3,
       "missing_mirrors": [
         "2.1-数学内容全景分析.md",
-        "2.x-其他数学主题.md",
-        "2.2-数学与形式化语言关系.md"
+        "2.2-数学与形式化语言关系.md",
+        "2.x-其他数学主题.md"
       ]
     },
     "3-哲学与科学原理": {
@@ -1159,28 +1139,30 @@
       "english_files": 3,
       "coverage_rate": 100.0,
       "missing_mirrors": [
+        "4.1-人工智能与机器学习.md",
         "4.2-物联网与边缘计算.md",
-        "4.x-其他行业主题.md",
-        "4.1-人工智能与机器学习.md"
+        "4.x-其他行业主题.md"
       ]
     },
     "5-架构与设计模式": {
-      "chinese_files": 2,
-      "english_files": 3,
-      "coverage_rate": 150.0,
-      "missing_mirrors": [
-        "5.x-其他架构主题.md",
-        "5.1-架构设计与形式化分析.md"
-      ]
-    },
-    "6-编程语言与实现": {
       "chinese_files": 3,
       "english_files": 3,
       "coverage_rate": 100.0,
       "missing_mirrors": [
+        "5.2-设计模式与代码实践.md",
+        "5.1-架构设计与形式化分析.md",
+        "5.x-其他架构主题.md"
+      ]
+    },
+    "6-编程语言与实现": {
+      "chinese_files": 4,
+      "english_files": 3,
+      "coverage_rate": 75.0,
+      "missing_mirrors": [
         "6.1-lean语言与形式化证明.md",
-        "6.2-rust_haskell代码实践.md",
-        "6.x-其他实现主题.md"
+        "6.1.1-lean语言与形式逻辑关系分析.md",
+        "6.x-其他实现主题.md",
+        "6.2-rust_haskell代码实践.md"
       ]
     },
     "7-验证与工程实践": {
