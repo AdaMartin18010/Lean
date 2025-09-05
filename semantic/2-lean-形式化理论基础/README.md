@@ -34,6 +34,18 @@
 
 - [2.6 形式化验证与工程实践](2.6-形式化验证与工程实践.md) - 模型检查、定理证明、自动化验证、工程应用
 
+### 2.7 前沿理论发展 / Advanced Theoretical Developments
+
+- [2.7 前沿理论发展](2.7-前沿理论发展.md) - 量子类型理论、时态类型理论、概率类型理论、AI辅助证明
+
+### 2.8 跨学科应用 / Interdisciplinary Applications
+
+- [2.8 跨学科应用](2.8-跨学科应用.md) - 数学、物理学、计算机科学、生物学、经济学应用
+
+### 2.9 工程实践指南 / Engineering Practice Guide
+
+- [2.9 工程实践指南](2.9-工程实践指南.md) - 项目规划、开发流程、质量保证、性能优化、团队协作
+
 ## 理论基础 / Theoretical Foundations
 
 ### 数学基础 / Mathematical Foundations

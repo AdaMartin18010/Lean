@@ -130,6 +130,18 @@
   2. ✅ 创建 `1.16-质量保证体系.md` - 完整的质量保证体系
   3. ✅ 创建 `1.17-Lean4语义分析与形式证明.md` - 类型系统、控制流、数据流语义分析
 
+### 第八轮：基于docs目录的内容重组 / Round 8: Content Reorganization Based on docs Directory
+
+  1. ✅ 创建 `2-lean-形式化理论基础/` 目录结构
+  2. ✅ 创建 `2.1-形式化理论统一框架.md` - 基于docs/Theory内容的统一框架
+  3. ✅ 创建 `2.2-类型论与证明论基础.md` - 基于docs/Theory类型理论内容
+  4. ✅ 创建 `2-lean-形式化理论基础/README.md` - 目录总览和导航
+  5. ✅ 创建 `CONTINUOUS_CONTEXT_SYSTEM.md` - 持续性上下文提醒体系
+  6. ✅ 创建 `2.3-模型论与语义分析.md` - 基于docs/Theory模型论内容
+  7. ✅ 创建 `2.4-范畴论与类型理论.md` - 基于docs/Theory范畴论内容
+  8. ✅ 创建 `2.5-同伦类型论.md` - 基于docs/Theory同伦类型论内容
+  9. ✅ 创建 `2.6-形式化验证与工程实践.md` - 基于docs/Theory验证和工程内容
+
 ---
 
 ## 待处理主题 / Pending Topics
