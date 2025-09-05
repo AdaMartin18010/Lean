@@ -59,6 +59,34 @@
 - [1.12.3 高阶等价与∞-范畴](1-lean-grammar-and-semantics/1.12.3-高阶等价与∞-范畴.md) - n-路径、∞-范畴
 - [1.12.4 HoTT 在 Lean 及数学中的应用](1-lean-grammar-and-semantics/1.12.4-HoTT在Lean及数学中的应用.md) - 同伦、拓扑、代数结构
 
+## 2. Lean形式化理论基础 / Lean Formal Theory Foundations
+
+基于docs目录中的丰富理论内容，构建Lean语言的形式化理论统一框架。
+
+### 2.1 形式化理论统一框架 / Formal Theory Unified Framework
+
+- [2.1 形式化理论统一框架](2-lean-形式化理论基础/2.1-形式化理论统一框架.md) - 统一形式系统、类型理论与证明论统一、依赖类型理论实现
+
+### 2.2 类型论与证明论基础 / Type Theory and Proof Theory Foundations
+
+- [2.2 类型论与证明论基础](2-lean-形式化理论基础/2.2-类型论与证明论基础.md) - 简单类型理论、依赖类型理论、Martin-Löf类型论、Curry-Howard对应
+
+### 2.3 模型论与语义分析 / Model Theory and Semantic Analysis
+
+- [2.3 模型论与语义分析](2-lean-形式化理论基础/2.3-模型论与语义分析.md) - 操作语义、指称语义、公理语义、语义一致性
+
+### 2.4 范畴论与类型理论 / Category Theory and Type Theory
+
+- [2.4 范畴论与类型理论](2-lean-形式化理论基础/2.4-范畴论与类型理论.md) - 范畴与函子、自然变换与极限、Curry-Howard-Lambek对应
+
+### 2.5 同伦类型论 / Homotopy Type Theory
+
+- [2.5 同伦类型论](2-lean-形式化理论基础/2.5-同伦类型论.md) - 路径类型与等价、单值性公理、高阶等价与∞-范畴
+
+### 2.6 形式化验证与工程实践 / Formal Verification and Engineering Practice
+
+- [2.6 形式化验证与工程实践](2-lean-形式化理论基础/2.6-形式化验证与工程实践.md) - 模型检查、定理证明、自动化验证、工程应用
+
 ## 规范标准 / Standards
 
 ### Lean 4（2025）规范对齐
