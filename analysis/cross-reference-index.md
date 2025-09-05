@@ -77,7 +77,7 @@
 
 ---
 
-# 详细交叉引用关系
+## 详细交叉引用关系
 
 ## 主要交叉引用关系
 
@@ -227,3 +227,11 @@
 - **7.2.2.1** → 4.x.1, 6.2.1.1
 - **7.2.2.2** → 6.2.1.1, 4.x.1
 - **7.2.3.1** → 1.4.2, 5.1.2.1
+
+---
+
+## 语义文档总索引入口 / Semantic Index Entry
+
+- 严格编号总索引：`semantic/INDEX.md`
+- 统一内容与格式规范：`semantic/CONTENT_STANDARDS.md`
+- 进度与导航：`semantic/CONTINUOUS_PROGRESS.md`
