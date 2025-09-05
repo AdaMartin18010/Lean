@@ -235,3 +235,9 @@
 - 严格编号总索引：`semantic/INDEX.md`
 - 统一内容与格式规范：`semantic/CONTENT_STANDARDS.md`
 - 进度与导航：`semantic/CONTINUOUS_PROGRESS.md`
+
+### 自动化生成约定 / Automation Conventions
+
+- 目标：自动检查并修复“上一节/下一节/交叉引用/编号一致性/LaTeX与代码块格式”。
+- 入口：后续将在 `semantic/` 下提供脚本；输出更新 `semantic/INDEX.md` 与各文件页首导航。
+- 要求：所有链接使用相对路径；禁止裸 URL；引用 `semantic/CONTENT_STANDARDS.md` 作为校验基线。

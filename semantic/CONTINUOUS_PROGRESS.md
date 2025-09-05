@@ -166,6 +166,21 @@
 - 🔄 **质量监控**：建立实时质量监控系统
 - 🔄 **持续改进**：建立质量改进循环机制
 
+---
+
+## 中断恢复指南 / Interruption Recovery Guide
+
+1. 从 `semantic/INDEX.md` 获取最新的严格编号导航，定位需继续的文件与章节。
+2. 打开 `semantic/CONTENT_STANDARDS.md`，对齐模板章节与 LaTeX/代码规范。
+3. 对应文件页首补齐“返回目录|上一节|下一节”链；确保相邻文件存在。
+4. 在“交叉引用”章节补齐：上一节、下一节、上位主题、下位细分主题。
+5. 校验：
+   - Markdown 规则（标题层级、单 H1、末尾换行）
+   - 数学公式 `\( .. \)` 与 `\[ .. \]` 使用一致
+   - 代码块可编译（Lean 4）、必要 `import`
+6. 更新 `semantic/CONTINUOUS_PROGRESS.md` 的已处理/进行中清单与变更记录。
+7. 如需结构合并/去重，参考 `semantic/TRANSFORMATION_GUIDELINES.md`。
+
 ### 质量验证结果 / Quality Verification Results
 
 - ✅ **内容充实度**：所有文件均包含实质性理论内容

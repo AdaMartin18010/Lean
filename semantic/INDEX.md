@@ -14,10 +14,32 @@
 - 1.6 工程案例与应用 → `1-lean-grammar-and-semantics/1.6-lean-工程案例与应用.md`
 - 1.7 生态与工具链 → `1-lean-grammar-and-semantics/1.7-lean-生态与工具链.md`
 - 1.8 类型论理论模型 → `1-lean-grammar-and-semantics/1.8-类型论理论模型.md`
+- 1.8.1 简单类型理论 → `1-lean-grammar-and-semantics/1.8.1-简单类型理论.md`
+- 1.8.2 依赖类型理论 → `1-lean-grammar-and-semantics/1.8.2-依赖类型理论.md`
+- 1.8.4 Martin-Löf 类型论 → `1-lean-grammar-and-semantics/1.8.4-Martin-Löf类型论.md`
+- 1.8.5 Curry-Howard 对应 → `1-lean-grammar-and-semantics/1.8.5-Curry-Howard对应.md`
 - 1.9 证明论与推理系统 → `1-lean-grammar-and-semantics/1.9-证明论与推理系统.md`
+- 1.9.1 自然演绎系统 → `1-lean-grammar-and-semantics/1.9.1-自然演绎系统.md`
+- 1.9.2 序列演算 → `1-lean-grammar-and-semantics/1.9.2-序列演算.md`
+- 1.9.3 归纳证明与递归原理 → `1-lean-grammar-and-semantics/1.9.3-归纳证明与递归原理.md`
+- 1.9.4 自动化证明与策略 → `1-lean-grammar-and-semantics/1.9.4-自动化证明与策略.md`
 - 1.10 模型论与语义模型 → `1-lean-grammar-and-semantics/1.10-模型论与语义模型.md`
+- 1.10.1 操作语义 → `1-lean-grammar-and-semantics/1.10.1-操作语义.md`
+- 1.10.2 指称语义 → `1-lean-grammar-and-semantics/1.10.2-指称语义.md`
+- 1.10.3 公理语义 → `1-lean-grammar-and-semantics/1.10.3-公理语义.md`
+- 1.10.4 语法-语义映射 → `1-lean-grammar-and-semantics/1.10.4-语法-语义映射.md`
+- 1.10.5 语义一致性与可判定性 → `1-lean-grammar-and-semantics/1.10.5-语义一致性与可判定性.md`
 - 1.11 范畴论与类型理论 → `1-lean-grammar-and-semantics/1.11-范畴论与类型理论.md`
+- 1.11.1 范畴与函子 → `1-lean-grammar-and-semantics/1.11.1-范畴与函子.md`
+- 1.11.2 自然变换与极限 → `1-lean-grammar-and-semantics/1.11.2-自然变换与极限.md`
+- 1.11.3 Curry-Howard-Lambek 对应 → `1-lean-grammar-and-semantics/1.11.3-Curry-Howard-Lambek对应.md`
+- 1.11.2.1 极限的具体类型 → `1-lean-grammar-and-semantics/1.11.2.1-极限的具体类型.md`
+- 1.11.1.1 单位范畴与对偶范畴 → `1-lean-grammar-and-semantics/1.11.1.1-单位范畴与对偶范畴.md`
 - 1.12 同伦类型论 → `1-lean-grammar-and-semantics/1.12-同伦类型论.md`
+- 1.12.1 路径类型与等价 → `1-lean-grammar-and-semantics/1.12.1-路径类型与等价.md`
+- 1.12.2 单值性公理 → `1-lean-grammar-and-semantics/1.12.2-单值性公理.md`
+- 1.12.3 高阶等价与∞-范畴 → `1-lean-grammar-and-semantics/1.12.3-高阶等价与∞-范畴.md`
+- 1.12.4 HoTT 在 Lean 及数学中的应用 → `1-lean-grammar-and-semantics/1.12.4-HoTT在Lean及数学中的应用.md`
 
 ---
 
