@@ -13,6 +13,7 @@
 ### 1.1 多层次引用体系 / Multi-Level Reference System
 
 **四层引用体系**:
+
 1. **文档级引用**: 文档之间的直接关联
 2. **章节级引用**: 章节之间的逻辑关联  
 3. **概念级引用**: 概念之间的语义关联
@@ -21,6 +22,7 @@
 ### 1.2 智能引用分类 / Intelligent Reference Classification
 
 **引用类型扩展**:
+
 - **前置引用**: 引用前面章节的内容
 - **后置引用**: 引用后面章节的内容
 - **交叉引用**: 引用其他文档的内容
@@ -34,6 +36,7 @@
 ### 2.1 上下文感知导航 / Context-Aware Navigation
 
 **智能导航规则**:
+
 ```markdown
 ## 智能导航规则
 
@@ -58,6 +61,7 @@
 ### 2.2 个性化推荐系统 / Personalized Recommendation System
 
 **推荐算法**:
+
 ```markdown
 ## 推荐算法
 
@@ -82,6 +86,7 @@
 ### 3.1 多维度概念索引 / Multi-Dimensional Concept Index
 
 **类型论概念索引**:
+
 ```markdown
 ## 类型论概念索引
 
@@ -124,6 +129,7 @@
 ### 3.2 主题关联索引 / Topic Association Index
 
 **形式化理论主题索引**:
+
 ```markdown
 ## 形式化理论主题索引
 
@@ -145,6 +151,7 @@
 ### 4.1 多模式搜索 / Multi-Modal Search
 
 **搜索模式**:
+
 ```markdown
 ## 搜索模式
 
@@ -172,6 +179,7 @@
 ### 4.2 搜索结果优化 / Search Result Optimization
 
 **结果排序算法**:
+
 ```markdown
 ## 结果排序算法
 
@@ -196,6 +204,7 @@
 ### 5.1 智能引用生成 / Intelligent Reference Generation
 
 **引用生成工具**:
+
 ```bash
 #!/bin/bash
 # 智能引用生成脚本
@@ -238,6 +247,7 @@ main "$@"
 ### 5.2 引用完整性检查 / Reference Integrity Check
 
 **完整性检查工具**:
+
 ```bash
 #!/bin/bash
 # 引用完整性检查脚本
@@ -277,11 +287,38 @@ main() {
 main "$@"
 ```
 
+### 5.3 链接与编号检查脚本与运行指令 / Link & Numbering Check Scripts
+
+```bash
+# scripts/xref_check.sh
+set -euo pipefail
+
+ROOT_DIR=${1:-semantic}
+
+echo "[1/3] Checking markdown links..."
+npx --yes markdown-link-check "${ROOT_DIR}/**/*.md" --quiet || true
+
+echo "[2/3] Checking numbering continuity..."
+python3 scripts/check_numbering.py --input "${ROOT_DIR}" --output numbering_report.json || true
+
+echo "[3/3] Checking cross-references..."
+python3 scripts/check_references.py --input "${ROOT_DIR}" --output references_report.json || true
+
+echo "Done. Reports: numbering_report.json, references_report.json"
+```
+
+运行指令：
+
+```bash
+bash scripts/xref_check.sh semantic
+```
+
 ## 6. 用户体验优化 / User Experience Optimization
 
 ### 6.1 智能推荐系统 / Intelligent Recommendation System
 
 **推荐算法实现**:
+
 ```python
 # 智能推荐系统
 class IntelligentRecommendationSystem:
@@ -315,6 +352,7 @@ class IntelligentRecommendationSystem:
 ### 6.2 个性化学习路径 / Personalized Learning Path
 
 **学习路径生成**:
+
 ```python
 # 个性化学习路径生成器
 class PersonalizedLearningPathGenerator:
@@ -350,6 +388,7 @@ class PersonalizedLearningPathGenerator:
 ### 7.1 缓存策略 / Caching Strategy
 
 **多级缓存系统**:
+
 ```markdown
 ## 多级缓存系统
 
@@ -377,6 +416,7 @@ class PersonalizedLearningPathGenerator:
 ### 7.2 数据库优化 / Database Optimization
 
 **数据库优化策略**:
+
 ```markdown
 ## 数据库优化策略
 
@@ -401,6 +441,7 @@ class PersonalizedLearningPathGenerator:
 ### 8.1 自动化测试 / Automated Testing
 
 **测试框架**:
+
 ```python
 # 自动化测试框架
 class CrossReferenceTestFramework:
@@ -440,6 +481,7 @@ class CrossReferenceTestFramework:
 ### 8.2 持续集成 / Continuous Integration
 
 **CI/CD流程**:
+
 ```yaml
 # CI/CD配置文件
 name: Cross-Reference System CI/CD
@@ -481,6 +523,7 @@ jobs:
 ### 9.1 使用分析 / Usage Analytics
 
 **分析指标**:
+
 ```markdown
 ## 分析指标
 
@@ -506,6 +549,7 @@ jobs:
 ### 9.2 智能分析 / Intelligent Analytics
 
 **分析工具**:
+
 ```python
 # 智能分析工具
 class IntelligentAnalytics:
@@ -541,6 +585,7 @@ class IntelligentAnalytics:
 ### 10.1 技术升级 / Technical Upgrades
 
 **升级方向**:
+
 1. **AI驱动推荐**: 基于深度学习的智能推荐
 2. **自然语言处理**: 支持自然语言查询
 3. **知识图谱**: 构建完整的知识图谱
@@ -549,6 +594,7 @@ class IntelligentAnalytics:
 ### 10.2 功能扩展 / Feature Extensions
 
 **扩展功能**:
+
 1. **多语言支持**: 支持更多语言和地区
 2. **移动端优化**: 优化移动端体验
 3. **离线支持**: 支持离线浏览和学习
@@ -559,11 +605,13 @@ class IntelligentAnalytics:
 ### 11.1 短期目标 (1-2周) / Short-term Goals (1-2 weeks)
 
 **第一周**:
+
 - 实现基础智能推荐
 - 优化搜索功能
 - 完善引用检查工具
 
 **第二周**:
+
 - 部署监控系统
 - 实现个性化学习路径
 - 优化用户体验
@@ -571,11 +619,13 @@ class IntelligentAnalytics:
 ### 11.2 中期目标 (1-2个月) / Medium-term Goals (1-2 months)
 
 **第一个月**:
+
 - 完善AI推荐系统
 - 实现知识图谱
 - 优化性能
 
 **第二个月**:
+
 - 扩展多语言支持
 - 实现协作功能
 - 建立社区机制
@@ -583,11 +633,13 @@ class IntelligentAnalytics:
 ### 11.3 长期目标 (3-6个月) / Long-term Goals (3-6 months)
 
 **第三个月**:
+
 - 实现VR/AR支持
 - 完善AI功能
 - 扩展生态系统
 
 **第四到六个月**:
+
 - 建立完整生态
 - 推动标准制定
 - 扩大影响力
@@ -613,7 +665,7 @@ class IntelligentAnalytics:
 ---
 
 **创建时间**: 2025-01-27  
-**最后更新**: 2025-01-27  
+**最后更新**: 2025-09-11  
 **维护者**: AI Assistant  
 **状态**: 🔄 持续优化中
 

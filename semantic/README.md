@@ -68,7 +68,7 @@
 - [1.12.3 高阶等价与∞-范畴](1-lean-grammar-and-semantics/1.12.3-高阶等价与∞-范畴.md) - n-路径、∞-范畴
 - [1.12.4 HoTT 在 Lean 及数学中的应用](1-lean-grammar-and-semantics/1.12.4-HoTT在Lean及数学中的应用.md) - 同伦、拓扑、代数结构
 
-## 2. Lean形式化理论基础 / Lean Formal Theory Foundations1
+## 2. Lean形式化理论基础（详细说明） / Lean Formal Theory Foundations (Details)
 
 基于docs目录中的丰富理论内容，构建Lean语言的形式化理论统一框架。
 
@@ -108,7 +108,7 @@
 
 - [2.9 工程实践指南](2-lean-形式化理论基础/2.9-工程实践指南.md) - 项目规划、开发流程、质量保证、性能优化、团队协作
 
-## 3. 学习路径指南 / Learning Path Guide1
+## 3. 学习路径指南（详细说明） / Learning Path Guide (Details)
 
 为不同层次的Lean语言学习者提供完整的学习路径指南，从初学者到高级专家。
 
@@ -136,7 +136,7 @@
 
 - [3.6 评估与认证](3-学习路径指南/3.6-评估与认证.md) - 学习成果评估、技能认证、能力测试
 
-## 4. 索引系统 / Index System1
+## 4. 索引系统（详细说明） / Index System (Details)
 
 提供完整的索引系统，帮助用户快速定位和查找所需信息。
 
@@ -156,7 +156,7 @@
 
 - [4.4 快速查找指南](4-索引系统/4.4-快速查找指南.md) - 提供多种查找方式，帮助用户快速定位所需信息
 
-## 5. 工具集成指南 / Tool Integration Guide1
+## 5. 工具集成指南（详细说明） / Tool Integration Guide (Details)
 
 提供完整的工具链集成指南，帮助用户高效地使用Lean语言进行开发和验证。
 
@@ -188,7 +188,7 @@
 
 - [5.7 部署工具](5-工具集成指南/5.7-部署工具.md) - 应用部署、容器化、CI/CD集成
 
-## 6. 社区资源 / Community Resources1
+## 6. 社区资源（详细说明） / Community Resources (Details)
 
 提供完整的社区资源，包括贡献指南、反馈系统、协作平台、社区活动等。
 
@@ -241,6 +241,9 @@
 ## 导航工具 / Navigation Tools
 
 - [进度文档](CONTINUOUS_PROGRESS.md) - 处理进度与状态跟踪
+- [严格编号总索引](INDEX.md) - 语义文档严格编号总索引与导航
+- [持续性上下文体系](CONTINUOUS_CONTEXT_SYSTEM.md) - 中断恢复与上下文续接
+- [增强交叉引用系统](ENHANCED_CROSS_REFERENCE_SYSTEM.md) - 智能导航与引用完整性
 - [统一模板](_TEMPLATE-WIKI-STYLE.md) - 维基风格+Lean4 2025规范模板
 - [发布说明](RELEASE_NOTES.md) - 发布说明与版本信息
 - [项目报告](PROJECT_COMPLETION_REPORT.md) - 项目完成报告与总结
@@ -255,3 +258,9 @@
 ---
 
 > 本文档库持续对齐 Wikipedia 风格与 Lean 4（2025）最新规范，支持本地跳转与交叉引用。
+
+---
+
+*最后更新：2025-09-11*  
+*版本：v2025-09*  
+*状态：进行中 🔄*
