@@ -40,6 +40,11 @@
 - 1.12.2 单值性公理 → `1-lean-grammar-and-semantics/1.12.2-单值性公理.md`
 - 1.12.3 高阶等价与∞-范畴 → `1-lean-grammar-and-semantics/1.12.3-高阶等价与∞-范畴.md`
 - 1.12.4 HoTT 在 Lean 及数学中的应用 → `1-lean-grammar-and-semantics/1.12.4-HoTT在Lean及数学中的应用.md`
+- 1.15 工程实践指南 → `1-lean-grammar-and-semantics/1.15-工程实践指南.md`
+- 1.16 质量保证体系 → `1-lean-grammar-and-semantics/1.16-质量保证体系.md`
+- 1.16.1 质量监控仪表板 → `1-lean-grammar-and-semantics/1.16.1-质量监控仪表板.md`
+- 1.16.2 持续改进机制 → `1-lean-grammar-and-semantics/1.16.2-持续改进机制.md`
+- 1.17 Lean4 语义分析与形式证明 → `1-lean-grammar-and-semantics/1.17-Lean4语义分析与形式证明.md`
 
 ---
 
@@ -50,4 +55,4 @@
 
 ---
 
-最后更新：2025-09-11 · 版本：v2025-09
+最后更新：2025-09-15 · 版本：v2025-09

@@ -1,6 +1,6 @@
 # 6. 社区资源 / Community Resources
 
-[返回主目录](../README.md) | [文档导航](../README.md)
+[返回目录](../README.md) | [严格编号总索引](../INDEX.md)
 
 ---
 

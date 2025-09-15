@@ -1,6 +1,6 @@
 # Lean 语义文档库持续进度跟踪 / Continuous Progress Tracking
 
-[返回主目录](../../README.md) | [文档导航](README.md)
+[返回目录](README.md) | [严格编号总索引](INDEX.md)
 
 ---
 
@@ -264,7 +264,7 @@
 4. **内容质量**：100% 包含实质性理论内容
 5. **代码可编译**：所有 Lean 代码示例已验证
 
-### 1结构优化成果 / Structural Optimization Achievements
+### 结构优化成果 / Structural Optimization Achievements
 
 1. **文件合并**：已完成5个主要文件的合并
 2. **内容深度**：合并文件包含更完整的理论背景
@@ -273,7 +273,7 @@
 5. **学习路径**：建立完整的学习路径体系
 6. **导航优化**：创建新的导航文档
 
-### 1创新性增强成果 / Innovation Enhancement Achievements
+### 创新性增强成果 / Innovation Enhancement Achievements
 
 1. **理论创新**：创建前沿理论发展文件
 2. **跨学科应用**：建立多领域实际应用案例
@@ -281,7 +281,7 @@
 4. **可视化工具**：设计证明可视化系统
 5. **协作系统**：建立实时协作证明平台
 
-### 1质量保证成果 / Quality Assurance Achievements
+### 质量保证成果 / Quality Assurance Achievements
 
 1. **技术验证机制**：建立专业评审和自动化验证
 2. **质量指标体系**：建立完整的质量度量体系
@@ -292,6 +292,14 @@
 ---
 
 ## 变更记录 / Change Log
+
+### 本轮增量变更（2025-09-15）
+
+- 新增英文摘要：`2/3/4/5/6` 目录 README-en.md
+- 新增质量保障子章：`1.16.1`、`1.16.2`
+- 新增工具章节：`5.8-自动化验证工具` 与 CI 徽章
+- 新增反馈章节：`6.2-反馈系统`（含SLA表）
+- 导航与索引：统一面包屑；`INDEX.md` 补充 1.15-1.17
 
 ### v2025-09-11 (第四阶段进行中)
 

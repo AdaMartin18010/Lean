@@ -248,6 +248,10 @@
 - [发布说明](RELEASE_NOTES.md) - 发布说明与版本信息
 - [项目报告](PROJECT_COMPLETION_REPORT.md) - 项目完成报告与总结
 - [批判分析](CRITICAL_ANALYSIS_REPORT.md) - 批判性分析报告与评价
+ - [贡献指南](CONTRIBUTING.md) - 贡献流程与本地检查
+ - [Issue 模板](ISSUE_TEMPLATES.md) - 问题/改进/功能模板
+ - [English README](README-en.md) - 英文镜像README
+ - [English Index](INDEX-en.md) - 英文严格编号索引
 
 ## 参考资料 / References
 

@@ -1,6 +1,6 @@
 # Lean 语义文档库发布说明 / Release Notes
 
-[返回主目录](../README.md) | [文档导航](README.md) | [进度跟踪](CONTINUOUS_PROGRESS.md)
+[返回目录](README.md) | [严格编号总索引](INDEX.md) | [进度跟踪](CONTINUOUS_PROGRESS.md)
 
 ---
 
@@ -184,6 +184,15 @@
 ## 变更记录 / Change Log
 
 ### v2025-01-01 (正式发布)
+### v2025-09-15 (增量更新)
+
+- 新增：`6-社区资源/6.2-反馈系统.md`
+- 新增：`5-工具集成指南/5.8-自动化验证工具.md`
+- 新增：`1-lean-grammar-and-semantics/1.16.1-质量监控仪表板.md`
+- 新增：`1-lean-grammar-and-semantics/1.16.2-持续改进机制.md`
+- 新增：`semantic/README-en.md` 与 `semantic/INDEX-en.md`
+- 修复：统一面包屑与 `CONTINUOUS_PROGRESS.md` 标题编号
+
 
 - ✅ 完成所有 47 个文件的标准化处理
 - ✅ 建立完整的文档结构和导航系统

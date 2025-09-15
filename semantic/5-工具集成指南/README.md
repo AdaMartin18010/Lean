@@ -1,6 +1,6 @@
 # 5. 工具集成指南 / Tool Integration Guide
 
-[返回主目录](../README.md) | [文档导航](../README.md)
+[返回目录](../README.md) | [严格编号总索引](../INDEX.md)
 
 ---
 
@@ -37,6 +37,10 @@
 ### 5.7 部署工具 / Deployment Tools
 
 - [5.7 部署工具](5.7-部署工具.md) - 应用部署、容器化、CI/CD集成
+
+### 5.8 自动化验证工具 / Automated Verification Tools
+
+- [5.8 自动化验证工具](5.8-自动化验证工具.md) - 链接检查、编号校验、交叉引用与CI集成
 
 ## 工具链特点 / Toolchain Features
 
